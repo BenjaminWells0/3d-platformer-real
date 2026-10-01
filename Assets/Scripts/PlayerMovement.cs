@@ -82,7 +82,7 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        // Get camera horizontal directions
+       
         Vector3 forward = cameraTransform.forward;
         Vector3 right = cameraTransform.right;
 
@@ -106,7 +106,7 @@ public class PlayerMovement : MonoBehaviour
         {
             Quaternion targetRotation = Quaternion.LookRotation(movementDirection);
 
-            // Smooth rotation without infinite spiral
+            
             rb.MoveRotation(
                 Quaternion.RotateTowards(
                     rb.rotation,
