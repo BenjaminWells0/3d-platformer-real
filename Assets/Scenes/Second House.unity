@@ -599,6 +599,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 644278144}
     m_Modifications:
+    - target: {fileID: 3375442315491659719, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2142851891}
     - target: {fileID: 3579378875473071586, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
       propertyPath: m_Name
       value: Lockers Test room
@@ -2207,6 +2211,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 644278144}
     m_Modifications:
+    - target: {fileID: 3375442315491659719, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2142851891}
     - target: {fileID: 3579378875473071586, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
       propertyPath: m_Name
       value: Lockers Test room (2)
@@ -2413,6 +2421,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 644278144}
     m_Modifications:
+    - target: {fileID: 3375442315491659719, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2142851891}
     - target: {fileID: 3579378875473071586, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
       propertyPath: m_Name
       value: Lockers Test room
@@ -2670,6 +2682,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1590628648207023695, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
   m_PrefabInstance: {fileID: 209392034}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &214870792 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9034068578985515377, guid: 6cbd4574e4f231a48aa7d0f5761de16a, type: 3}
+  m_PrefabInstance: {fileID: 481356090}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &217439531
 PrefabInstance:
@@ -3417,7 +3434,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8258909530788877867, guid: 7c1015373ce9adf41b5f40dd4870d4ad, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.9
+      value: -13.169
       objectReference: {fileID: 0}
     - target: {fileID: 8258909530788877867, guid: 7c1015373ce9adf41b5f40dd4870d4ad, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5455,6 +5472,7 @@ GameObject:
   - component: {fileID: 592378102}
   - component: {fileID: 592378104}
   - component: {fileID: 592378103}
+  - component: {fileID: 592378105}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -5571,6 +5589,20 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &592378105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592378101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
+  enemy: {fileID: 214870792}
+  activeDistance: 10
 --- !u!1001 &592780946
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5657,6 +5689,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 644278144}
     m_Modifications:
+    - target: {fileID: 3375442315491659719, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2142851891}
     - target: {fileID: 3579378875473071586, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
       propertyPath: m_Name
       value: Lockers Test room
@@ -5726,6 +5762,7 @@ GameObject:
   - component: {fileID: 598287060}
   - component: {fileID: 598287062}
   - component: {fileID: 598287061}
+  - component: {fileID: 598287063}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -5842,6 +5879,20 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &598287063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598287059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
+  enemy: {fileID: 214870792}
+  activeDistance: 10
 --- !u!1001 &601069279
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7413,6 +7464,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 644278144}
     m_Modifications:
+    - target: {fileID: 3375442315491659719, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2142851891}
     - target: {fileID: 3579378875473071586, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
       propertyPath: m_Name
       value: Lockers Test room
@@ -14467,6 +14522,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 644278144}
     m_Modifications:
+    - target: {fileID: 3375442315491659719, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2142851891}
     - target: {fileID: 3579378875473071586, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
       propertyPath: m_Name
       value: Lockers Test room (4)
@@ -14942,8 +15001,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1273862219}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.9811815, z: -0.19308771, w: 0}
-  m_LocalPosition: {x: -44.27, y: 6.986573, z: -8.246182}
+  m_LocalRotation: {x: 0, y: 0.98118156, z: -0.19308764, w: 0}
+  m_LocalPosition: {x: -44.27, y: 6.986573, z: -10.5151825}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15408,6 +15467,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 644278144}
     m_Modifications:
+    - target: {fileID: 3375442315491659719, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2142851891}
     - target: {fileID: 3579378875473071586, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
       propertyPath: m_Name
       value: Lockers Test room (1)
@@ -20216,6 +20279,7 @@ GameObject:
   - component: {fileID: 1731000699}
   - component: {fileID: 1731000701}
   - component: {fileID: 1731000700}
+  - component: {fileID: 1731000702}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -20332,6 +20396,20 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &1731000702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731000698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
+  enemy: {fileID: 214870792}
+  activeDistance: 10
 --- !u!1001 &1732720107
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20938,6 +21016,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 644278144}
     m_Modifications:
+    - target: {fileID: 3375442315491659719, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2142851891}
     - target: {fileID: 3579378875473071586, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
       propertyPath: m_Name
       value: Lockers Test room (3)
@@ -21771,6 +21853,7 @@ GameObject:
   - component: {fileID: 1841750065}
   - component: {fileID: 1841750067}
   - component: {fileID: 1841750066}
+  - component: {fileID: 1841750068}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -21887,6 +21970,20 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &1841750068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841750064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
+  enemy: {fileID: 214870792}
+  activeDistance: 10
 --- !u!1001 &1844410129
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22332,10 +22429,10 @@ MonoBehaviour:
         DecelTime: 0
     - Name: Look Orbit Y
       Owner: {fileID: 1875844595}
-      Enabled: 1
+      Enabled: 0
       Input:
-        InputAction: {fileID: 0}
-        Gain: 0.5
+        InputAction: {fileID: 940553563908505091, guid: a66fc44489699e54aa518903e2a22f7a, type: 3}
+        Gain: 20
         CancelDeltaTime: 0
       InputValue: 0
       Driver:
@@ -22481,8 +22578,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1875844591}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.9811815, z: -0.19308773, w: 0}
-  m_LocalPosition: {x: -44.27, y: 6.986573, z: -8.246182}
+  m_LocalRotation: {x: 0, y: 0.98118156, z: -0.19308764, w: 0}
+  m_LocalPosition: {x: -44.27, y: 6.986573, z: -10.5151825}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

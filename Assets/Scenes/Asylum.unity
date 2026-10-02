@@ -1107,7 +1107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &21410082
 PrefabInstance:
@@ -1843,7 +1843,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &39632731
 PrefabInstance:
@@ -1949,15 +1949,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7566819530749708477, guid: 3270677f806aad14fb5dd07575af7970, type: 3}
       propertyPath: m_Color.b
-      value: 0.05523906
+      value: 0.12156863
       objectReference: {fileID: 0}
     - target: {fileID: 7566819530749708477, guid: 3270677f806aad14fb5dd07575af7970, type: 3}
       propertyPath: m_Color.g
-      value: 0.3584906
+      value: 0.21960784
       objectReference: {fileID: 0}
     - target: {fileID: 7566819530749708477, guid: 3270677f806aad14fb5dd07575af7970, type: 3}
       propertyPath: m_Color.r
-      value: 0.05523904
+      value: 0.78039217
       objectReference: {fileID: 0}
     - target: {fileID: 7566819530749708477, guid: 3270677f806aad14fb5dd07575af7970, type: 3}
       propertyPath: m_Intensity
@@ -2848,7 +2848,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &72967148
 PrefabInstance:
@@ -4177,7 +4177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &109360423
 PrefabInstance:
@@ -12028,7 +12028,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &320873835
 PrefabInstance:
@@ -12831,7 +12831,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &338551030
 PrefabInstance:
@@ -13946,7 +13946,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &378971292
 PrefabInstance:
@@ -14972,7 +14972,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &405744962
 PrefabInstance:
@@ -22102,7 +22102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &583041078
 PrefabInstance:
@@ -25954,7 +25954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &678200248
 PrefabInstance:
@@ -26394,7 +26394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &689508393
 PrefabInstance:
@@ -28255,7 +28255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &736178071
 PrefabInstance:
@@ -31414,7 +31414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &824529527
 PrefabInstance:
@@ -31511,7 +31511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &828592453
 PrefabInstance:
@@ -34977,7 +34977,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1 &923539338
 GameObject:
@@ -35347,7 +35347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &938106137
 PrefabInstance:
@@ -46168,7 +46168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &1202326680
 PrefabInstance:
@@ -47045,7 +47045,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &1239606203
 PrefabInstance:
@@ -47629,7 +47629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &1266667103
 PrefabInstance:
@@ -49338,7 +49338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &1315980351
 PrefabInstance:
@@ -49669,7 +49669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &1329063189
 PrefabInstance:
@@ -50156,7 +50156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1 &1349649504 stripped
 GameObject:
@@ -50175,7 +50175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &1352152635
 PrefabInstance:
@@ -50950,7 +50950,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &1384531772
 PrefabInstance:
@@ -51505,7 +51505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &1405930827
 PrefabInstance:
@@ -53314,7 +53314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &1464716282
 PrefabInstance:
@@ -55870,7 +55870,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &1532867045
 PrefabInstance:
@@ -56015,7 +56015,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &1534074566
 PrefabInstance:
@@ -57706,7 +57706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &1565550704
 PrefabInstance:
@@ -61510,7 +61510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &1677155474
 PrefabInstance:
@@ -62387,7 +62387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &1697278010
 PrefabInstance:
@@ -64584,7 +64584,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &1773350620
 PrefabInstance:
@@ -65262,7 +65262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &1789324037
 PrefabInstance:
@@ -66155,7 +66155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &1808590488
 PrefabInstance:
@@ -69725,7 +69725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &1876054376
 PrefabInstance:
@@ -71665,7 +71665,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &1926088774
 PrefabInstance:
@@ -72464,7 +72464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &1948308024
 PrefabInstance:
@@ -72934,7 +72934,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &1959175897
 PrefabInstance:
@@ -73425,7 +73425,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &1971626910
 PrefabInstance:
@@ -73920,7 +73920,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1 &1988379454
 GameObject:
@@ -74081,7 +74081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &2000295631
 PrefabInstance:
@@ -74494,7 +74494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &2010676490
 PrefabInstance:
@@ -75228,6 +75228,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KillPlayer
   changer: {fileID: 2021202628}
+--- !u!4 &2021202630 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2846184358831186258, guid: 6cbd4574e4f231a48aa7d0f5761de16a, type: 3}
+  m_PrefabInstance: {fileID: 2021202625}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2024330011
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -76559,7 +76564,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &2059363404
 PrefabInstance:
@@ -78735,7 +78740,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56fee716e56e82499e7c2936a6456a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickeringLight
-  enemy: {fileID: 8686343323318096229}
+  enemy: {fileID: 2021202630}
   activeDistance: 10
 --- !u!1001 &2112620360
 PrefabInstance:
