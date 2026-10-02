@@ -19,11 +19,11 @@ public class FlickeringLight : MonoBehaviour
         float currentDistance = Vector3.Distance(transform.position, enemy.position);
         if (currentDistance < activeDistance)
         {
-            myLight.intensity = Random.Range(0f, 1f);
+            myLight.intensity = Random.Range(0f, 5f);
         }
         else
         {
-            myLight.intensity = 1f;
+            myLight.intensity = 5f;
         }
     }
 }
