@@ -158,6 +158,7 @@ agent.SetDestination(targetLockerPosition);
 
     private bool CanSeePlayer()
     {
+        
         if(player.isHidden == true)
         {
             player.isSeen = false;
