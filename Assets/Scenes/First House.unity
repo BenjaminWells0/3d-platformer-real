@@ -9813,7 +9813,7 @@ MonoBehaviour:
       Enabled: 1
       Input:
         InputAction: {fileID: -5630151704836100654, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-        Gain: 20
+        Gain: 15
         CancelDeltaTime: 0
       InputValue: 0
       Driver:
@@ -9824,7 +9824,7 @@ MonoBehaviour:
       Enabled: 1
       Input:
         InputAction: {fileID: -5630151704836100654, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-        Gain: 20
+        Gain: 15
         CancelDeltaTime: 0
       InputValue: 0
       Driver:
@@ -9841,7 +9841,7 @@ MonoBehaviour:
       Driver:
         AccelTime: 0
         DecelTime: 0
-  PlayerIndex: -1
+  PlayerIndex: 40
   AutoEnableInputs: 1
 --- !u!114 &707077171
 MonoBehaviour:
@@ -9891,7 +9891,7 @@ MonoBehaviour:
   RecenteringTarget: 1
   HorizontalAxis:
     Value: -180
-    Center: 0
+    Center: -60
     Range: {x: -180, y: 180}
     Wrap: 1
     Recentering:
@@ -9901,8 +9901,8 @@ MonoBehaviour:
     Restrictions: 0
   VerticalAxis:
     Value: 40.5
-    Center: 29.9
-    Range: {x: -10, y: 45}
+    Center: 45
+    Range: {x: -180, y: 180}
     Wrap: 1
     Recentering:
       Enabled: 0
@@ -10003,7 +10003,7 @@ MonoBehaviour:
     MinimumOcclusionTime: 0
     CameraRadius: 0
     UseFollowTarget:
-      Enabled: 0
+      Enabled: 1
       YOffset: 0
     Strategy: 0
     MaximumEffort: 4
@@ -23489,8 +23489,8 @@ Camera:
   m_GameObject: {fileID: 1964136241}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0

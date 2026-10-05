@@ -70,6 +70,7 @@ public class EnemyState : MonoBehaviour
     }
     private void GoToNextWaypoint()
     {
+        
         Debug.Log("Going to waypoint " + currentWayPoint);
 
         agent.SetDestination(patrolPoints[currentWayPoint].position);
@@ -158,43 +159,51 @@ agent.SetDestination(targetLockerPosition);
 
     private bool CanSeePlayer()
     {
-        
-        if(player.isHidden == true)
+        if (player != null)
         {
-            player.isSeen = false;
-            return false;
-        }
-
-        Vector3 directionToPlayer = player.transform.position - agent.transform.position;
-        if(directionToPlayer.magnitude > viewDistance)
-        {
-            player.isSeen = false;
-            return false;
-        }
-
-        float angle = Vector3.Angle(transform.forward, directionToPlayer);
-        if(angle > viewAngle / 2f)
-        {
-            player.isSeen = false;
-            return false;
-        }
-
-        if (Physics.Raycast(transform.position, directionToPlayer.normalized, out RaycastHit hit, viewDistance, obstacleMask))
-        {
-            
-            if(!hit.collider.CompareTag("Player"))
+            if (player.isHidden == true)
             {
                 player.isSeen = false;
                 return false;
             }
-            
+
+            Vector3 directionToPlayer = player.transform.position - agent.transform.position;
+            if (directionToPlayer.magnitude > viewDistance)
+            {
+                player.isSeen = false;
+                return false;
+            }
+
+            float angle = Vector3.Angle(transform.forward, directionToPlayer);
+            if (angle > viewAngle / 2f)
+            {
+                player.isSeen = false;
+                return false;
+            }
+
+            if (Physics.Raycast(transform.position, directionToPlayer.normalized, out RaycastHit hit, viewDistance, obstacleMask))
+            {
+
+                if (!hit.collider.CompareTag("Player"))
+                {
+                    player.isSeen = false;
+                    return false;
+                }
+
+            }
+            if (player.isHidden == true)
+            {
+                return false;
+            }
+            player.isSeen = true;
+            return true;
         }
-        if(player.isHidden == true)
+        else
         {
+            
+            Debug.Log("No Player Detected");
             return false;
         }
-        player.isSeen = true;
-        return true; 
     }
     public void NotifyPlayerHidInLocker(Vector3 lockerPosition)
     {
