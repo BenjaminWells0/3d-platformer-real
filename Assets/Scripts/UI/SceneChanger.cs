@@ -11,6 +11,7 @@ public class SceneChanger : MonoBehaviour
     [SerializeField] private bool ObstacleHallWay;
     [SerializeField] private bool Jumper;
     [SerializeField] private bool Asylum;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -83,13 +84,9 @@ public class SceneChanger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            LoadFinish();
+            
             LoadDeath();
-            LoadHouseTwo();
-            LoadLongHallway();
-            ObtacleHallway();
-            JumperLevel();
-            LoadAsylum();
+            
         }
 
     }
