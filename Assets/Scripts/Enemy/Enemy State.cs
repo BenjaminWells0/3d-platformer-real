@@ -1,4 +1,5 @@
 
+using System.Reflection.Metadata.Ecma335;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -15,7 +16,10 @@ public class EnemyState : MonoBehaviour
     [SerializeField] private LayerMask obstacleMask;
     [SerializeField] private KillPlayer killPlayerScript;
     private bool isHuntingLocker = false;
-
+    private float eyeHeightOffsset = 1.5f;
+    private float playerWidthOffest = 0.4f;
+    private bool hasLineOfSight;
+    
     public enum m_currentState
     {
         patrol,
@@ -161,19 +165,26 @@ agent.SetDestination(targetLockerPosition);
     {
         if (player != null)
         {
+            
             if (player.isHidden == true)
             {
                 player.isSeen = false;
                 return false;
             }
 
-            Vector3 directionToPlayer = player.transform.position - agent.transform.position;
+            
+            Vector3 enemyEyePosition = transform.position + (Vector3.up * eyeHeightOffsset);
+            Vector3 raisedPlayerCenter = player.transform.position + (Vector3.up * eyeHeightOffsset);
+            Vector3 directionToPlayer = raisedPlayerCenter - enemyEyePosition;
+
+            
             if (directionToPlayer.magnitude > viewDistance)
             {
                 player.isSeen = false;
                 return false;
             }
 
+            
             float angle = Vector3.Angle(transform.forward, directionToPlayer);
             if (angle > viewAngle / 2f)
             {
@@ -181,36 +192,67 @@ agent.SetDestination(targetLockerPosition);
                 return false;
             }
 
-            if (Physics.Raycast(transform.position, directionToPlayer.normalized, out RaycastHit hit, viewDistance, obstacleMask))
+         
+            Vector3 sideOffset = Vector3.Cross(directionToPlayer.normalized, Vector3.up).normalized * playerWidthOffest;
+
+            Vector3[] cheackTargets = new Vector3[]
             {
+                raisedPlayerCenter,
+                raisedPlayerCenter + sideOffset,
+                raisedPlayerCenter - sideOffset
+            };
 
-                if (!hit.collider.CompareTag("Player"))
+
+            hasLineOfSight = false; 
+
+            foreach (Vector3 targetPoint in cheackTargets)
+            {
+                Vector3 targetDir = targetPoint - enemyEyePosition;
+                float distanceToTarget = targetDir.magnitude;
+
+                
+                if (Physics.Raycast(enemyEyePosition, targetDir.normalized, out RaycastHit hit, maxDistance: distanceToTarget, layerMask: obstacleMask))
                 {
-                    player.isSeen = false;
-                    return false;
+                    
+                    continue;
                 }
-
+                else
+                {
+                   
+                    hasLineOfSight = true;
+                    break;
+                }
             }
+
+           
+            if (!hasLineOfSight)
+            {
+                player.isSeen = false;
+                return false;
+            }
+
+           
             if (player.isHidden == true)
             {
                 return false;
             }
+
             player.isSeen = true;
             return true;
         }
         else
         {
-            
             Debug.Log("No Player Detected");
             return false;
         }
     }
+
     public void NotifyPlayerHidInLocker(Vector3 lockerPosition)
     {
         targetLockerPosition = lockerPosition;
         state = m_currentState.playerHideWhileSeen;
     }
-    // Call this when the player exits the locker safely to reset the AI states
+    
     public void ResetLockerHunt()
     {
         isHuntingLocker = false;
@@ -219,7 +261,7 @@ agent.SetDestination(targetLockerPosition);
     }
     private void OnDrawGizmos()
     {
-        // Draw the enemy's view cone for debugging
+        
         Gizmos.color = Color.yellow;
         Vector3 forward = transform.forward * viewDistance;
         Vector3 leftBoundary = Quaternion.Euler(0, -viewAngle / 2f, 0) * forward;

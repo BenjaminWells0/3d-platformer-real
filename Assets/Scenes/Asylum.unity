@@ -56747,7 +56747,7 @@ MonoBehaviour:
       Enabled: 1
       Input:
         InputAction: {fileID: -5630151704836100654, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-        Gain: 15
+        Gain: 10
         CancelDeltaTime: 0
       InputValue: 0
       Driver:
@@ -75632,7 +75632,7 @@ PrefabInstance:
       objectReference: {fileID: 2021202629}
     - target: {fileID: 4699243888677064434, guid: 6cbd4574e4f231a48aa7d0f5761de16a, type: 3}
       propertyPath: obstacleMask.m_Bits
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4699243888677064434, guid: 6cbd4574e4f231a48aa7d0f5761de16a, type: 3}
       propertyPath: patrolPoints.Array.size
@@ -81728,7 +81728,7 @@ PrefabInstance:
       objectReference: {fileID: 8686343323318096224}
     - target: {fileID: 4699243888677064434, guid: 6cbd4574e4f231a48aa7d0f5761de16a, type: 3}
       propertyPath: obstacleMask.m_Bits
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4699243888677064434, guid: 6cbd4574e4f231a48aa7d0f5761de16a, type: 3}
       propertyPath: patrolPoints.Array.size
@@ -81745,7 +81745,7 @@ PrefabInstance:
     - target: {fileID: 4699243888677064434, guid: 6cbd4574e4f231a48aa7d0f5761de16a, type: 3}
       propertyPath: 'patrolPoints.Array.data[2]'
       value: 
-      objectReference: {fileID: 1044298606}
+      objectReference: {fileID: 599245834}
     - target: {fileID: 4699243888677064434, guid: 6cbd4574e4f231a48aa7d0f5761de16a, type: 3}
       propertyPath: 'patrolPoints.Array.data[3]'
       value: 
