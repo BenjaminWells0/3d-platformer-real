@@ -217,5 +217,28 @@ agent.SetDestination(targetLockerPosition);
         state = m_currentState.patrol;
         GoToNextWaypoint();
     }
+    private void OnDrawGizmos()
+    {
+        // Draw the enemy's view cone for debugging
+        Gizmos.color = Color.yellow;
+        Vector3 forward = transform.forward * viewDistance;
+        Vector3 leftBoundary = Quaternion.Euler(0, -viewAngle / 2f, 0) * forward;
+        Vector3 rightBoundary = Quaternion.Euler(0, viewAngle / 2f, 0) * forward;
 
+        Gizmos.DrawRay(transform.position, leftBoundary);
+        Gizmos.DrawRay(transform.position, rightBoundary);
+
+        // Draw patrol points if available
+        if (patrolPoints != null)
+        {
+            Gizmos.color = Color.green;
+            foreach (var point in patrolPoints)
+            {
+                if (point != null)
+                {
+                    Gizmos.DrawSphere(point.position, 0.2f);
+                }
+            }
+        }
+    }
 }

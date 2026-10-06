@@ -20,6 +20,7 @@ public class MoveEnemy : MonoBehaviour
         
         
         transform.position = Vector3.MoveTowards(transform.position, playerLocation, speed * Time.deltaTime);
+        transform.LookAt(playerLocation);
     }
 
 
