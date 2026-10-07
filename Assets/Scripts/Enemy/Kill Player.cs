@@ -3,11 +3,13 @@ using UnityEngine;
 public class KillPlayer : MonoBehaviour
 {
     [SerializeField] SceneChanger changer;
+    EnemyState state;
+    PlayerMovement playerMovement;
     public bool canKillPlayer;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        state = GetComponent<EnemyState>();
     }
 
     // Update is called once per frame
@@ -15,14 +17,20 @@ public class KillPlayer : MonoBehaviour
     {
         
     }
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if(collision.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
+            state.agent.speed = 0;
             canKillPlayer = true;
-            ExecuteKill();
+            StartCoroutine(KillAfterDelay());
         }
-       
+    }
+
+    private System.Collections.IEnumerator KillAfterDelay()
+    {
+        yield return new WaitForSeconds(4);
+        ExecuteKill();
     }
 
     public void ExecuteKill()

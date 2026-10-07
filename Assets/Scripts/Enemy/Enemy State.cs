@@ -7,7 +7,7 @@ public class EnemyState : MonoBehaviour
 {
     [SerializeField] Player player;
     [SerializeField] private Transform[] patrolPoints;
-    private NavMeshAgent agent;
+    public NavMeshAgent agent;
     public float speed;
     private Vector3 targetLockerPosition;
     private int currentWayPoint = 0;
@@ -153,6 +153,7 @@ agent.SetDestination(targetLockerPosition);
 
         if (killPlayerScript != null)
         {
+            speed = 0;
             killPlayerScript.ExecuteKill();
         }
         else

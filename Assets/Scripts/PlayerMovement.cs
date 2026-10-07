@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public InputActionReference jump;
     public InputActionReference crouch;
 
-    [SerializeField] private float speed = 6f;
+    public float speed = 6f;
     [SerializeField] private float jumpForce = 5f;
     [SerializeField] private float groundDepth = 1f;
     [SerializeField] private float rotationSpeed = 720f;
