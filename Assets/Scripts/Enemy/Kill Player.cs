@@ -3,6 +3,7 @@ using UnityEngine;
 public class KillPlayer : MonoBehaviour
 {
     [SerializeField] SceneChanger changer;
+    public bool canKillPlayer;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,6 +19,7 @@ public class KillPlayer : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player"))
         {
+            canKillPlayer = true;
             ExecuteKill();
         }
        

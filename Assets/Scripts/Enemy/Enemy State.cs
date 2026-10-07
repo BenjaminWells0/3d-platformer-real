@@ -8,7 +8,7 @@ public class EnemyState : MonoBehaviour
     [SerializeField] Player player;
     [SerializeField] private Transform[] patrolPoints;
     private NavMeshAgent agent;
-    [SerializeField] private float speed;
+    public float speed;
     private Vector3 targetLockerPosition;
     private int currentWayPoint = 0;
     [SerializeField] private float viewDistance = 10;
