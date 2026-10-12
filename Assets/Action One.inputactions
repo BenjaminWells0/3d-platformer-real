@@ -17,6 +17,16 @@
                     "priority": 0
                 },
                 {
+                    "name": "Interact",
+                    "type": "Button",
+                    "id": "7546ca97-5bb0-47e0-a332-4f9bf167e86d",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Hold",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
                     "name": "ScrollWheel",
                     "type": "PassThrough",
                     "id": "dd16c8d7-1636-4d83-b584-b32210940f60",
@@ -89,17 +99,6 @@
             ],
             "bindings": [
                 {
-                    "name": "",
-                    "id": "0057f1d8-51a1-48ca-885c-df781d8c8a02",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";KeyboardLeft",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
                     "name": "2D Vector",
                     "id": "585c8e52-9833-4bdd-bca8-0f7ef98a7760",
                     "path": "2DVector",
@@ -116,7 +115,7 @@
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";KeyboardLeft",
+                    "groups": ";KeyboardLeft;New Control Scheme",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -127,7 +126,7 @@
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";KeyboardLeft",
+                    "groups": ";KeyboardLeft;New Control Scheme",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -138,7 +137,7 @@
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";KeyboardLeft",
+                    "groups": ";KeyboardLeft;New Control Scheme",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -149,7 +148,7 @@
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";KeyboardLeft",
+                    "groups": ";KeyboardLeft;New Control Scheme",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -182,7 +181,7 @@
                     "path": "<Keyboard>/downArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";KeyboardRight",
+                    "groups": ";KeyboardRight;New Control Scheme",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -193,7 +192,7 @@
                     "path": "<Keyboard>/leftArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";KeyboardRight",
+                    "groups": ";KeyboardRight;New Control Scheme",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -204,10 +203,32 @@
                     "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";KeyboardRight",
+                    "groups": ";KeyboardRight;New Control Scheme",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "820fbbec-9970-4450-bfb2-7ded9e6a4f4e",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse;New Control Scheme;KeyboardLeft;KeyboardRight",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "02bd9c74-6cfb-41bf-acd1-b6a41c90f1b9",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad;New Control Scheme;KeyboardLeft;KeyboardRight",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 },
                 {
                     "name": "",
@@ -215,7 +236,7 @@
                     "path": "<Mouse>/scroll",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Keyboard&Mouse",
+                    "groups": ";Keyboard&Mouse;New Control Scheme;KeyboardLeft;KeyboardRight",
                     "action": "ScrollWheel",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -226,7 +247,7 @@
                     "path": "<Gamepad>/rightStick",
                     "interactions": "Hold",
                     "processors": "",
-                    "groups": ";Gamepad;Keyboard&Mouse",
+                    "groups": ";Gamepad;Keyboard&Mouse;New Control Scheme;KeyboardLeft;KeyboardRight",
                     "action": "Look",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -237,7 +258,7 @@
                     "path": "<Pointer>/delta",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Keyboard&Mouse;Touch",
+                    "groups": ";Keyboard&Mouse;Touch;New Control Scheme;KeyboardLeft;KeyboardRight",
                     "action": "Look",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -248,7 +269,7 @@
                     "path": "<Joystick>/{Hatswitch}",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Joystick",
+                    "groups": "Joystick;New Control Scheme;KeyboardLeft;KeyboardRight",
                     "action": "Look",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -259,7 +280,7 @@
                     "path": "<Keyboard>/leftShift",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard&Mouse",
+                    "groups": "Keyboard&Mouse;New Control Scheme;KeyboardLeft;KeyboardRight",
                     "action": "Sprint",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -270,7 +291,7 @@
                     "path": "<Gamepad>/leftStickPress",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Gamepad",
+                    "groups": "Gamepad;New Control Scheme;KeyboardLeft;KeyboardRight",
                     "action": "Sprint",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -281,7 +302,7 @@
                     "path": "<XRController>/trigger",
                     "interactions": "",
                     "processors": "",
-                    "groups": "XR",
+                    "groups": "XR;New Control Scheme;KeyboardLeft;KeyboardRight",
                     "action": "Sprint",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -292,7 +313,7 @@
                     "path": "<Keyboard>/f",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";New Control Scheme",
+                    "groups": ";New Control Scheme;KeyboardLeft;KeyboardRight",
                     "action": "Flashlight",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -303,7 +324,7 @@
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";New Control Scheme",
+                    "groups": ";New Control Scheme;KeyboardLeft;KeyboardRight",
                     "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -314,7 +335,7 @@
                     "path": "<Mouse>/rightButton",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";New Control Scheme;KeyboardLeft;KeyboardRight",
                     "action": "Look Around",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -325,7 +346,7 @@
                     "path": "<Keyboard>/c",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";New Control Scheme;KeyboardLeft;KeyboardRight",
                     "action": "Crouch",
                     "isComposite": false,
                     "isPartOfComposite": false

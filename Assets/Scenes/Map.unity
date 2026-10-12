@@ -107074,14 +107074,34 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0.06427911
       objectReference: {fileID: 0}
+    - target: {fileID: 1558400889695463921, guid: d2d8d7d347910e54f86ea62bca550b02, type: 3}
+      propertyPath: m_ControllerManager.Controllers.Array.data[0].Input.InputAction
+      value: 
+      objectReference: {fileID: 1940409107246026392, guid: a66fc44489699e54aa518903e2a22f7a, type: 3}
+    - target: {fileID: 1558400889695463921, guid: d2d8d7d347910e54f86ea62bca550b02, type: 3}
+      propertyPath: m_ControllerManager.Controllers.Array.data[1].Input.InputAction
+      value: 
+      objectReference: {fileID: 1940409107246026392, guid: a66fc44489699e54aa518903e2a22f7a, type: 3}
     - target: {fileID: 2160016635882186990, guid: d2d8d7d347910e54f86ea62bca550b02, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 268610333}
+    - target: {fileID: 2160016635882186990, guid: d2d8d7d347910e54f86ea62bca550b02, type: 3}
+      propertyPath: m_DefaultControlScheme
+      value: New Control Scheme
+      objectReference: {fileID: 0}
     - target: {fileID: 3384904296287555657, guid: d2d8d7d347910e54f86ea62bca550b02, type: 3}
       propertyPath: m_Name
       value: player 1 Main Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 5634244411824030417, guid: d2d8d7d347910e54f86ea62bca550b02, type: 3}
+      propertyPath: crouch
+      value: 
+      objectReference: {fileID: 8736284455485329080, guid: a66fc44489699e54aa518903e2a22f7a, type: 3}
+    - target: {fileID: 6415749337390913637, guid: d2d8d7d347910e54f86ea62bca550b02, type: 3}
+      propertyPath: look
+      value: 
+      objectReference: {fileID: 1940409107246026392, guid: a66fc44489699e54aa518903e2a22f7a, type: 3}
     - target: {fileID: 6996966594165496830, guid: d2d8d7d347910e54f86ea62bca550b02, type: 3}
       propertyPath: m_LocalPosition.x
       value: -17.913355
