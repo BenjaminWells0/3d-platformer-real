@@ -115,7 +115,7 @@
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";KeyboardLeft;New Control Scheme",
+                    "groups": ";KeyboardLeft",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -126,7 +126,7 @@
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";KeyboardLeft;New Control Scheme",
+                    "groups": ";KeyboardLeft",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -137,7 +137,7 @@
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";KeyboardLeft;New Control Scheme",
+                    "groups": ";KeyboardLeft",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -148,7 +148,7 @@
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";KeyboardLeft;New Control Scheme",
+                    "groups": ";KeyboardLeft",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -181,7 +181,7 @@
                     "path": "<Keyboard>/downArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";KeyboardRight;New Control Scheme",
+                    "groups": ";KeyboardRight",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -192,7 +192,7 @@
                     "path": "<Keyboard>/leftArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";KeyboardRight;New Control Scheme",
+                    "groups": ";KeyboardRight",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -203,7 +203,7 @@
                     "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";KeyboardRight;New Control Scheme",
+                    "groups": ";KeyboardRight",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -356,30 +356,36 @@
     ],
     "controlSchemes": [
         {
-            "name": "New Control Scheme",
-            "bindingGroup": "New Control Scheme",
+            "name": "KeyboardLeft",
+            "bindingGroup": "KeyboardLeft",
             "devices": [
                 {
-                    "devicePath": "<Mouse>",
-                    "isOptional": false,
+                    "devicePath": "<Keyboard>",
+                    "isOptional": true,
                     "isOR": false
                 },
                 {
-                    "devicePath": "<Keyboard>",
-                    "isOptional": false,
+                    "devicePath": "<Mouse>",
+                    "isOptional": true,
                     "isOR": false
                 }
             ]
         },
         {
-            "name": "KeyboardLeft",
-            "bindingGroup": "KeyboardLeft",
-            "devices": []
-        },
-        {
             "name": "KeyboardRight",
             "bindingGroup": "KeyboardRight",
-            "devices": []
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": true,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": true,
+                    "isOR": false
+                }
+            ]
         }
     ]
 }

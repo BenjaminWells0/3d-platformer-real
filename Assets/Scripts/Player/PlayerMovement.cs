@@ -6,9 +6,12 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Player player;
     public Rigidbody rb;
 
-    public InputActionReference move;
-    public InputActionReference jump;
-    public InputActionReference crouch;
+    
+    private PlayerInput playerInput;
+    private InputAction moveAction;
+    private InputAction jumpAction;
+    private InputAction crouchAction;
+
 
     public float speed = 6f;
     [SerializeField] private float jumpForce = 5f;
@@ -22,47 +25,55 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        if (Camera.main != null)
+        playerInput = GetComponent<PlayerInput>();
+
+        if (playerInput != null)
         {
-            cameraTransform = Camera.main.transform;
+            // Find the specific actions inside this player's isolated asset map instance
+            // Make sure these strings match the exact names of your actions in the editor asset!
+            moveAction = playerInput.actions.FindAction("Move");
+            jumpAction = playerInput.actions.FindAction("Jump");
+            crouchAction = playerInput.actions.FindAction("Crouch");
         }
+
+        // Your existing camera code remains right here...
+        // Replace the old Camera.main line inside Start() with this:
+        Camera localCam = GetComponentInChildren<Camera>();
+        if (localCam != null)
+        {
+            cameraTransform = localCam.transform;
+        }
+
     }
 
-    private void OnEnable()
-    {
-        move.action.Enable();
-        jump.action.Enable();
-        crouch.action.Enable();
-    }
-
-    private void OnDisable()
-    {
-        move.action.Disable();
-        jump.action.Disable();
-        crouch.action.Disable();
-    }
+    
 
     private void Update()
     {
-        dir = move.action.ReadValue<Vector2>();
+        
+        if (moveAction == null) return;
+
+        
+        dir = moveAction.ReadValue<Vector2>();
 
         WhereToMove();
 
-        if (jump.action.WasPressedThisFrame() && IsGrounded())
+        if (jumpAction.WasPressedThisFrame() && IsGrounded())
         {
             Jump();
         }
 
-        if (crouch.action.WasPressedThisFrame())
+        if (crouchAction.WasPressedThisFrame())
         {
             Crouch();
         }
 
-        if (crouch.action.WasReleasedThisFrame())
+        if (crouchAction.WasReleasedThisFrame())
         {
             player.isCrouched = false;
         }
     }
+
 
     private void FixedUpdate()
     {

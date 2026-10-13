@@ -3,36 +3,54 @@ using UnityEngine.InputSystem;
 
 public class DragLook : MonoBehaviour
 {
-    [SerializeField] private InputActionReference look;
-    [SerializeField] private InputActionReference lookAround;
+    private PlayerInput playerInput;
+    private InputAction lookAction;
+    private InputAction lookAroundAction;
 
-    private void OnEnable()
+    private void Start()
     {
-        lookAround.action.Enable();
+        playerInput = GetComponentInParent<PlayerInput>();
 
-        
-        look.action.Disable();
+        if (playerInput == null)
+        {
+            playerInput = GetComponent<PlayerInput>();
+        }
 
-        lookAround.action.started += StartLooking;
-        lookAround.action.canceled += StopLooking;
+        if (playerInput != null)
+        {
+            lookAction = playerInput.actions.FindAction("Look");
+            lookAroundAction = playerInput.actions.FindAction("Look Around");
+
+            if (lookAction != null && lookAroundAction != null)
+            {
+                lookAction.Disable();
+
+                lookAroundAction.started += StartLooking;
+                lookAroundAction.canceled += StopLooking;
+            }
+        }
     }
 
-    private void OnDisable()
+    private void OnDestroy()
     {
-        lookAround.action.started -= StartLooking;
-        lookAround.action.canceled -= StopLooking;
-
-        lookAround.action.Disable();
-        look.action.Disable();
+        if (lookAroundAction != null)
+        {
+            lookAroundAction.started -= StartLooking;
+            lookAroundAction.canceled -= StopLooking;
+        }
     }
 
     private void StartLooking(InputAction.CallbackContext context)
     {
-        look.action.Enable();
+        
+        if (context.control.device == Mouse.current && playerInput.playerIndex == 0)
+        {
+            lookAction?.Enable();
+        }
     }
 
     private void StopLooking(InputAction.CallbackContext context)
     {
-        look.action.Disable();
+        lookAction?.Disable();
     }
 }

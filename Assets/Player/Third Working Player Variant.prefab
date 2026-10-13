@@ -457,6 +457,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 6697541949778660004}
+    - target: {fileID: 1044370921855460667, guid: 7c1015373ce9adf41b5f40dd4870d4ad, type: 3}
+      propertyPath: m_DefaultControlScheme
+      value: KeyboardRight
+      objectReference: {fileID: 0}
+    - target: {fileID: 1044370921855460667, guid: 7c1015373ce9adf41b5f40dd4870d4ad, type: 3}
+      propertyPath: m_NeverAutoSwitchControlSchemes
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1147285869105273615, guid: 7c1015373ce9adf41b5f40dd4870d4ad, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
