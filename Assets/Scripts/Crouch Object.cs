@@ -3,40 +3,18 @@ using UnityEngine;
 
 public class CrouchObject : MonoBehaviour
 {
-    [SerializeField] Player player;
-    [SerializeField] Collider collider;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [SerializeField] private Collider SolidCollider;
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerStay(Collider other)
     {
-        
-    }
-
-    private void FixedUpdate()
-    {
-        if (collider != null)
+        Player standingPlayer = other.gameObject.GetComponentInParent<Player>();
+        if (standingPlayer.isCrouched)
         {
-            TurnOffCollider(collider);
-        }
-    }
-
-    private void TurnOffCollider(Collider other)
-    {
-        if (player.isCrouched)
-        {
-            if (other != null)
-            {
-                other.enabled = false;
-            }
+            Physics.IgnoreCollision(other, SolidCollider, true);
         }
         else
         {
-            other.enabled = true;
+            Physics.IgnoreCollision(other, SolidCollider, false);
         }
     }
 }

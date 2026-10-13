@@ -1,56 +1,67 @@
+using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class DragLook : MonoBehaviour
 {
     private PlayerInput playerInput;
-    private InputAction lookAction;
-    private InputAction lookAroundAction;
+    public InputActionReference lookActionReference;
+    public InputActionReference lookAroundActionReference;
 
+    private CinemachineInputAxisController axisController;
     private void Start()
     {
         playerInput = GetComponentInParent<PlayerInput>();
 
-        if (playerInput == null)
-        {
-            playerInput = GetComponent<PlayerInput>();
-        }
+        axisController = GetComponentInChildren<CinemachineInputAxisController>();
 
-        if (playerInput != null)
-        {
-            lookAction = playerInput.actions.FindAction("Look");
-            lookAroundAction = playerInput.actions.FindAction("Look Around");
+        if (lookActionReference != null) lookActionReference.action.Enable();
+        if(lookAroundActionReference != null) lookAroundActionReference.action.Enable();
+        ClearCinemachineInput();
+    }
 
-            if (lookAction != null && lookAroundAction != null)
+    private void Update()
+    {
+        if(lookAroundActionReference == null ||  axisController == null || playerInput == null) return;
+        if(Mouse.current.rightButton.isPressed)
+        {
+            Vector2 mouseScreenPos = Mouse.current.position.ReadValue();
+            float screenMidpoint = Screen.width / 2f;
+
+            if(playerInput.playerIndex == 0 && mouseScreenPos.x < screenMidpoint)
             {
-                lookAction.Disable();
-
-                lookAroundAction.started += StartLooking;
-                lookAroundAction.canceled += StopLooking;
+                InjectCinemachineInput();
+            }
+            else if(playerInput.playerIndex == 1 && mouseScreenPos.x >= screenMidpoint)
+            {
+                InjectCinemachineInput();
+            }
+            else
+            {
+                ClearCinemachineInput();
             }
         }
-    }
-
-    private void OnDestroy()
-    {
-        if (lookAroundAction != null)
+        else
         {
-            lookAroundAction.started -= StartLooking;
-            lookAroundAction.canceled -= StopLooking;
+            ClearCinemachineInput();
         }
     }
 
-    private void StartLooking(InputAction.CallbackContext context)
+    private void InjectCinemachineInput()
     {
-        
-        if (context.control.device == Mouse.current && playerInput.playerIndex == 0)
-        {
-            lookAction?.Enable();
-        }
+        if (axisController.Controllers == null || axisController.Controllers.Count < 2) return;
+        axisController.Controllers[0].Input.InputAction = lookActionReference;
+        axisController.Controllers[1].Input.InputAction = lookActionReference;
     }
 
-    private void StopLooking(InputAction.CallbackContext context)
+    private void ClearCinemachineInput()
     {
-        lookAction?.Disable();
+        if (axisController.Controllers.Count < 2) return;
+        axisController.Controllers[0].Input.InputAction = null;
+        axisController.Controllers[1].Input.InputAction = null;
     }
+
+    
+
+   
 }

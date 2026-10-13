@@ -417,7 +417,7 @@ MonoBehaviour:
         AccelTime: 0
         DecelTime: 0
   PlayerIndex: -1
-  AutoEnableInputs: 1
+  AutoEnableInputs: 0
 --- !u!114 &5079605527177558776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -430,6 +430,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ebda5c10b1715b42aa4cf5e1ce8a48a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragLook
+  lookActionReference: {fileID: 940553563908505091, guid: a66fc44489699e54aa518903e2a22f7a, type: 3}
+  lookAroundActionReference: {fileID: 1940409107246026392, guid: a66fc44489699e54aa518903e2a22f7a, type: 3}
 --- !u!114 &3331029421349275525
 MonoBehaviour:
   m_ObjectHideFlags: 0

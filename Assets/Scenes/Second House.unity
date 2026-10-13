@@ -2832,7 +2832,7 @@ Transform:
   m_GameObject: {fileID: 227645192}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.72, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10574,6 +10574,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: ae1057f934c75a249ae1a6462f310568, type: 3}
       insertIndex: -1
       addedObject: {fileID: 922866398}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: ae1057f934c75a249ae1a6462f310568, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 922866400}
   m_SourcePrefab: {fileID: 100100000, guid: ae1057f934c75a249ae1a6462f310568, type: 3}
 --- !u!4 &922866396 stripped
 Transform:
@@ -10597,9 +10600,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93412cefff356874ebb838cf550e67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CrouchObject
-  player: {fileID: 2142851891}
-  collider: {fileID: 922866399}
+  SolidCollider: {fileID: 922866400}
 --- !u!65 &922866399
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922866397}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.5636817, y: 2.8629167, z: 2.7200534}
+  m_Center: {x: 0.28184152, y: 0.93145394, z: 0.86002773}
+--- !u!65 &922866400
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -17703,7 +17726,7 @@ Transform:
   m_GameObject: {fileID: 1475743713}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.17, y: 0, z: 0}
+  m_LocalPosition: {x: -2.02, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22378,6 +22401,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: ae1057f934c75a249ae1a6462f310568, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1837933131}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: ae1057f934c75a249ae1a6462f310568, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1837933132}
   m_SourcePrefab: {fileID: 100100000, guid: ae1057f934c75a249ae1a6462f310568, type: 3}
 --- !u!4 &1837933128 stripped
 Transform:
@@ -22401,9 +22427,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93412cefff356874ebb838cf550e67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CrouchObject
-  player: {fileID: 7936825937468937749, guid: 94d833d26b3fbb64b89231125cf415f2, type: 3}
-  collider: {fileID: 1837933131}
+  SolidCollider: {fileID: 1837933132}
 --- !u!65 &1837933131
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837933129}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.5420382, y: 2.7891948, z: 1.7574061}
+  m_Center: {x: -0.2710188, y: 1.9916838, z: 0.37881884}
+--- !u!65 &1837933132
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -25621,7 +25667,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b087d4987a38af44193c2c9abe443484, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpawnPlayer
-  spawnPoint: {fileID: 2119717736}
+  spawnPoint1: {fileID: 227645193}
+  spawnPoint2: {fileID: 1475743714}
 --- !u!114 &2119717735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25688,7 +25735,7 @@ Transform:
   m_GameObject: {fileID: 2119717732}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -44.27, y: 4.72, z: -13.169}
+  m_LocalPosition: {x: -44.27, y: 5.95, z: -13.169}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

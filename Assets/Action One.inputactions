@@ -225,7 +225,7 @@
                     "path": "<Gamepad>/buttonNorth",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Gamepad;New Control Scheme;KeyboardLeft;KeyboardRight",
+                    "groups": "Gamepad;New Control Scheme;KeyboardLeft",
                     "action": "Interact",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -324,7 +324,7 @@
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";New Control Scheme;KeyboardLeft;KeyboardRight",
+                    "groups": ";New Control Scheme;KeyboardLeft",
                     "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -346,7 +346,7 @@
                     "path": "<Keyboard>/c",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";New Control Scheme;KeyboardLeft;KeyboardRight",
+                    "groups": ";New Control Scheme;KeyboardLeft",
                     "action": "Crouch",
                     "isComposite": false,
                     "isPartOfComposite": false
