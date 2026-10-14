@@ -473,6 +473,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 0de2040c6ec49964ebec5233746d9dd3, type: 2}
+    - target: {fileID: 6464624493874915812, guid: 7c1015373ce9adf41b5f40dd4870d4ad, type: 3}
+      propertyPath: isSeen
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6752981678215417604, guid: 7c1015373ce9adf41b5f40dd4870d4ad, type: 3}
       propertyPath: crouch
       value: 
@@ -534,10 +538,45 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8258909530788877867, guid: 7c1015373ce9adf41b5f40dd4870d4ad, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2664734486476024016}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7874031018021627184, guid: 7c1015373ce9adf41b5f40dd4870d4ad, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3521733921410044195}
   m_SourcePrefab: {fileID: 100100000, guid: 7c1015373ce9adf41b5f40dd4870d4ad, type: 3}
 --- !u!4 &4975979439071898074 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8258909530788877867, guid: 7c1015373ce9adf41b5f40dd4870d4ad, type: 3}
   m_PrefabInstance: {fileID: 4004738671101444081}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6545311237756115649 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7874031018021627184, guid: 7c1015373ce9adf41b5f40dd4870d4ad, type: 3}
+  m_PrefabInstance: {fileID: 4004738671101444081}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1773428102 &3521733921410044195
+ParentConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6545311237756115649}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Weight: 1
+  m_TranslationAtRest: {x: 76.37988, y: 0.3640902, z: 25.630062}
+  m_RotationAtRest: {x: -0.00008583064, y: -89.99981, z: 0}
+  m_TranslationOffsets:
+  - {x: 16.396893, y: 53.603783, z: 2.546402}
+  m_RotationOffsets:
+  - {x: 84.065056, y: 98.68881, z: -83.85694}
+  m_AffectTranslationX: 1
+  m_AffectTranslationY: 1
+  m_AffectTranslationZ: 1
+  m_AffectRotationX: 1
+  m_AffectRotationY: 1
+  m_AffectRotationZ: 1
+  m_Active: 0
+  m_IsLocked: 1
+  m_Sources:
+  - sourceTransform: {fileID: 0}
+    weight: 1

@@ -11,23 +11,23 @@ public class CoopHelp : MonoBehaviour
         inputManager = GetComponent<PlayerInputManager>();
         if (inputManager == null) return;
 
-        // THE FIX: Define a list containing BOTH pieces of hardware to share
+        
         InputDevice[] sharedDevices = new InputDevice[] { Keyboard.current, Mouse.current };
 
-        // 1. Spawn Player 1 and pass the shared devices list
+        
         PlayerInput p1 = inputManager.JoinPlayer(
             playerIndex: 0,
             splitScreenIndex: 0,
             controlScheme: "KeyboardLeft",
-            pairWithDevices: sharedDevices // Give P1 access to the keyboard AND mouse
+            pairWithDevices: sharedDevices 
         );
         Debug.Log("Forced Player 1 into the scene with shared hardware.");
         var p1Controller = p1.GetComponentInChildren<CinemachineInputAxisController>();
         if (p1Controller != null)
         {
-            p1Controller.PlayerIndex = 0; // Force this camera to ONLY listen to Player 1's inputs!
+            p1Controller.PlayerIndex = 0; 
         }
-        // 2. Spawn Player 2 and pass the EXACT SAME shared devices list
+        
         PlayerInput p2 = inputManager.JoinPlayer(
             playerIndex: 1,
             splitScreenIndex: 1,
@@ -38,9 +38,9 @@ public class CoopHelp : MonoBehaviour
         var p2Controller = p2.GetComponentInChildren<CinemachineInputAxisController>();
         if (p2Controller != null)
         {
-            p2Controller.PlayerIndex = 1; // Force this camera to ONLY listen to Player 2's inputs!
+            p2Controller.PlayerIndex = 1; 
         }
-        // Your existing Cinemachine channel code remains perfectly untouched right below...
+        
         if (p2 != null)
         {
             CinemachineBrain p2Brain = p2.GetComponentInChildren<CinemachineBrain>();

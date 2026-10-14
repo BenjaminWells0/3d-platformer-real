@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class EnemyState : MonoBehaviour
 {
-    [SerializeField] Player player;
+    Player player;
     [SerializeField] private Transform[] patrolPoints;
     public NavMeshAgent agent;
     public float speed;
@@ -35,7 +35,7 @@ public class EnemyState : MonoBehaviour
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-
+        
         agent.speed = speed;
         agent.updatePosition = true;
         agent.updateRotation = true;
@@ -70,7 +70,24 @@ public class EnemyState : MonoBehaviour
                 killPlayer();
                 break;
         }
+        findClosetsPlayer();
+    }
 
+    private void findClosetsPlayer()
+    {
+        Player[] allPlayers = FindObjectsByType<Player>(FindObjectsSortMode.None);
+
+        float closetsPlayer = Mathf.Infinity;
+
+        //Player.nearestPlayer = null;
+
+        foreach (Player p in allPlayers)
+        {
+            if (player != null)
+            {
+                float distanceToPlayer = Vector3.Distance(transform.position, p.transform.position);
+            }
+        }
     }
     private void GoToNextWaypoint()
     {
