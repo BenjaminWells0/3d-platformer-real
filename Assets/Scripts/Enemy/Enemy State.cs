@@ -13,12 +13,16 @@ public class EnemyState : MonoBehaviour
     private int currentWayPoint = 0;
     [SerializeField] private float viewDistance = 10;
     [SerializeField] private float viewAngle = 90;
+    [SerializeField] private float stoppingDistance = 1.2f;
+    [SerializeField] private float rotationSpeed = 5;
     [SerializeField] private LayerMask obstacleMask;
     [SerializeField] private KillPlayer killPlayerScript;
     private bool isHuntingLocker = false;
     private float eyeHeightOffsset = 1.5f;
     private float playerWidthOffest = 0.4f;
+
     private bool hasLineOfSight;
+    
     
     public enum m_currentState
     {
@@ -49,6 +53,7 @@ public class EnemyState : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        findClosetsPlayer();
         switch (state)
         {
             case m_currentState.patrol:
@@ -70,7 +75,7 @@ public class EnemyState : MonoBehaviour
                 killPlayer();
                 break;
         }
-        findClosetsPlayer();
+        
     }
 
     private void findClosetsPlayer()
@@ -79,15 +84,18 @@ public class EnemyState : MonoBehaviour
 
         float closetsPlayer = Mathf.Infinity;
 
-        //Player.nearestPlayer = null;
+        Player nearestPlayer = null;
 
         foreach (Player p in allPlayers)
         {
-            if (player != null)
+            float distanceToPlayer = Vector3.Distance(transform.position, p.transform.position);
+            if (distanceToPlayer < closetsPlayer)
             {
-                float distanceToPlayer = Vector3.Distance(transform.position, p.transform.position);
+                closetsPlayer = distanceToPlayer;
+                nearestPlayer = p;
             }
         }
+        player = nearestPlayer;
     }
     private void GoToNextWaypoint()
     {
@@ -126,6 +134,8 @@ public class EnemyState : MonoBehaviour
     }
     private void chasePlayer()
     {
+       
+
         
         if (state == m_currentState.playerHideWhileSeen)
         {
