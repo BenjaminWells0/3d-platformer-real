@@ -320,7 +320,7 @@ GameObject:
   - component: {fileID: 2870249316846553909}
   - component: {fileID: 1779461213921465650}
   - component: {fileID: 5035034995001579980}
-  - component: {fileID: 2542449538850570108}
+  - component: {fileID: 7684099594706069013}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -443,7 +443,7 @@ MonoBehaviour:
   ObstacleHallWay: 0
   Jumper: 0
   Asylum: 0
---- !u!114 &2542449538850570108
+--- !u!114 &7684099594706069013
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -452,9 +452,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 3193588893774596536}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f8a47ef25109b24f9ae88d14c080e53, type: 3}
+  m_Script: {fileID: 11500000, guid: 285e8a0e4b38f8e4ba41488f466189a8, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::KillPlayer
+  m_EditorClassIdentifier: Assembly-CSharp::KillMirrorEnenmy
   changer: {fileID: 5035034995001579980}
 --- !u!1 &3862766595725901657
 GameObject:
@@ -864,7 +864,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveEnemy
   speed: 1
-  player: {fileID: 0}
 --- !u!135 &3021214814696663786
 SphereCollider:
   m_ObjectHideFlags: 0

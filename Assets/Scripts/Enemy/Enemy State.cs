@@ -53,7 +53,6 @@ public class EnemyState : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        findClosetsPlayer();
         switch (state)
         {
             case m_currentState.patrol:
@@ -75,7 +74,7 @@ public class EnemyState : MonoBehaviour
                 killPlayer();
                 break;
         }
-        
+        findClosetsPlayer();
     }
 
     private void findClosetsPlayer()
@@ -134,8 +133,6 @@ public class EnemyState : MonoBehaviour
     }
     private void chasePlayer()
     {
-       
-
         
         if (state == m_currentState.playerHideWhileSeen)
         {

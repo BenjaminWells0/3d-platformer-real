@@ -11953,6 +11953,26 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2542449538850570108, guid: 87295bafbec36074da57147a977a475a, type: 3}
+      propertyPath: killTimer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2542449538850570108, guid: 87295bafbec36074da57147a977a475a, type: 3}
+      propertyPath: throwTimer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2542449538850570108, guid: 87295bafbec36074da57147a977a475a, type: 3}
+      propertyPath: canKillPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2542449538850570108, guid: 87295bafbec36074da57147a977a475a, type: 3}
+      propertyPath: throwForceAngle.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2542449538850570108, guid: 87295bafbec36074da57147a977a475a, type: 3}
+      propertyPath: throwForceAngle.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4760797680532256379, guid: 87295bafbec36074da57147a977a475a, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
@@ -12014,13 +12034,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7279245739125628288, guid: 87295bafbec36074da57147a977a475a, type: 3}
+      propertyPath: kill
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7279245739125628288, guid: 87295bafbec36074da57147a977a475a, type: 3}
       propertyPath: speed
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7279245739125628288, guid: 87295bafbec36074da57147a977a475a, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 792801433}
+    - target: {fileID: 7279245739125628288, guid: 87295bafbec36074da57147a977a475a, type: 3}
+      propertyPath: changer
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8568505485793790070, guid: 87295bafbec36074da57147a977a475a, type: 3}
       propertyPath: m_Name
       value: Enemy 1

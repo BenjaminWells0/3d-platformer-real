@@ -59,27 +59,29 @@ public class KillPlayer : MonoBehaviour
 
     private void StartGrab()
     {
-
-        while (playerConstraint.sourceCount > 0)
+        if (playerBody != null)
         {
-            playerConstraint.RemoveSource(0);
+            while (playerConstraint.sourceCount > 0)
+            {
+                playerConstraint.RemoveSource(0);
+            }
+            ConstraintSource newThing = new ConstraintSource();
+            newThing.sourceTransform = enemyHandSocket;
+            newThing.weight = 1.0f;
+
+            playerConstraint.AddSource(newThing);
+
+            playerConstraint.SetRotationOffset(0, Vector3.zero);
+            playerConstraint.SetTranslationOffset(0, Vector3.zero);
+
+            playerConstraint.constraintActive = true;
+            playerConstraint.enabled = true;
+
+            canKillPlayer = true;
+            Debug.Log("Randy Ortons Got His Neck! Hes going for the SLAM");
+
+            Invoke(nameof(ReleaseThrow), throwTimer);
         }
-        ConstraintSource newThing = new ConstraintSource();
-        newThing.sourceTransform = enemyHandSocket;
-        newThing.weight = 1.0f;
-
-        playerConstraint.AddSource(newThing);
-
-        playerConstraint.SetRotationOffset(0, Vector3.zero);
-        playerConstraint.SetTranslationOffset(0, Vector3.zero);
-
-        playerConstraint.constraintActive = true;
-        playerConstraint.enabled = true;
-
-        canKillPlayer = true;
-        Debug.Log("Randy Ortons Got His Neck! Hes going for the SLAM");
-
-        Invoke(nameof (ReleaseThrow), throwTimer);
     }
 
     public void ReleaseThrow()
