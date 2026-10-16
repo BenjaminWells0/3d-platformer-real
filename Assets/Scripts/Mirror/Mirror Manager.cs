@@ -21,13 +21,30 @@ public class MirrorManager : MonoBehaviour
 
     private void TurnOnMirrorWorldObjects()
     {
+        if (mirrorCamera == null) return;
+
         Plane[] mirrorPlanes = GeometryUtility.CalculateFrustumPlanes(mirrorCamera);
+
         foreach (GameObject obj in mirrorWorldObjects)
         {
+            if (obj == null) continue; 
+
             Renderer meshRenderer = obj.GetComponentInChildren<Renderer>();
-           Collider collider = obj.GetComponentInChildren<Collider>();
-            collider.enabled = GeometryUtility.TestPlanesAABB(mirrorPlanes, collider.bounds);
-            meshRenderer.enabled = GeometryUtility.TestPlanesAABB(mirrorPlanes, collider.bounds);
+            Collider collider = obj.GetComponentInChildren<Collider>();
+
+            
+            if (collider != null)
+            {
+                bool isVisible = GeometryUtility.TestPlanesAABB(mirrorPlanes, collider.bounds);
+
+                collider.enabled = isVisible;
+
+                if (meshRenderer != null)
+                {
+                    meshRenderer.enabled = isVisible;
+                }
+            }
         }
     }
+
 }
