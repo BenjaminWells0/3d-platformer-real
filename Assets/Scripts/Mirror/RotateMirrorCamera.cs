@@ -58,6 +58,6 @@ public class RotateMirrorCamera : MonoBehaviour
         if (Mathf.Approximately(dir, 0f))
             return;
 
-        _puzzleCamTransform.Rotate(Vector3.up, dir * rotationSpeed * Time.deltaTime, Space.World);
+        _puzzleCamTransform.Rotate(Vector3.right, dir * rotationSpeed * Time.deltaTime, Space.World);
     }
 }

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5877126640883452417}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Mirror Celing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,6 +104,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
     - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
@@ -112,12 +116,24 @@ PrefabInstance:
       value: Floor cube kitchen (6)
       objectReference: {fileID: 0}
     - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
     - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
@@ -127,6 +143,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
+    - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
@@ -202,6 +222,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
     - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
@@ -210,12 +234,24 @@ PrefabInstance:
       value: Floor cube kitchen (10)
       objectReference: {fileID: 0}
     - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
     - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
@@ -225,6 +261,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
+    - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
@@ -300,6 +340,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
     - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
@@ -308,12 +352,24 @@ PrefabInstance:
       value: Floor cube kitchen (8)
       objectReference: {fileID: 0}
     - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
     - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
@@ -323,6 +379,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
+    - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
@@ -398,6 +458,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
     - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
@@ -406,12 +470,24 @@ PrefabInstance:
       value: Floor cube kitchen (3)
       objectReference: {fileID: 0}
     - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
     - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
@@ -421,6 +497,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
+    - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
@@ -496,6 +576,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
     - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
@@ -504,12 +588,24 @@ PrefabInstance:
       value: Floor cube kitchen (15)
       objectReference: {fileID: 0}
     - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
     - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
@@ -519,6 +615,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
+    - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
@@ -594,6 +694,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
     - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
@@ -602,12 +706,24 @@ PrefabInstance:
       value: Floor cube kitchen (12)
       objectReference: {fileID: 0}
     - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
     - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
@@ -617,6 +733,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
+    - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
@@ -692,6 +812,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
     - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
@@ -700,12 +824,24 @@ PrefabInstance:
       value: Floor cube kitchen (2)
       objectReference: {fileID: 0}
     - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
     - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
@@ -715,6 +851,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
+    - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
@@ -790,6 +930,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
     - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
@@ -798,12 +942,24 @@ PrefabInstance:
       value: Floor cube kitchen (1)
       objectReference: {fileID: 0}
     - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
     - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
@@ -813,6 +969,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
+    - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
@@ -888,6 +1048,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
     - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
@@ -896,12 +1060,24 @@ PrefabInstance:
       value: Floor cube kitchen (18)
       objectReference: {fileID: 0}
     - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
     - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
@@ -911,6 +1087,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
+    - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
@@ -986,6 +1166,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
     - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
@@ -994,12 +1178,24 @@ PrefabInstance:
       value: Floor cube kitchen (19)
       objectReference: {fileID: 0}
     - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
     - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
@@ -1009,6 +1205,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
+    - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
@@ -1084,6 +1284,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
     - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
@@ -1092,12 +1296,24 @@ PrefabInstance:
       value: Floor cube kitchen (14)
       objectReference: {fileID: 0}
     - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
     - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
@@ -1107,6 +1323,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
+    - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
@@ -1182,6 +1402,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
     - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
@@ -1190,12 +1414,24 @@ PrefabInstance:
       value: Floor cube kitchen (5)
       objectReference: {fileID: 0}
     - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
     - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
@@ -1205,6 +1441,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
+    - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
@@ -1280,6 +1520,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
     - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
@@ -1288,12 +1532,24 @@ PrefabInstance:
       value: Floor cube kitchen (17)
       objectReference: {fileID: 0}
     - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
     - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
@@ -1303,6 +1559,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
+    - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
@@ -1378,6 +1638,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
     - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
@@ -1386,12 +1650,24 @@ PrefabInstance:
       value: Floor cube kitchen (7)
       objectReference: {fileID: 0}
     - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
     - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
@@ -1401,6 +1677,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
+    - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
@@ -1476,6 +1756,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
     - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
@@ -1484,12 +1768,24 @@ PrefabInstance:
       value: Floor cube kitchen
       objectReference: {fileID: 0}
     - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
     - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
@@ -1499,6 +1795,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
+    - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
@@ -1574,6 +1874,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
     - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
@@ -1582,12 +1886,24 @@ PrefabInstance:
       value: Floor cube kitchen (13)
       objectReference: {fileID: 0}
     - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
     - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
@@ -1597,6 +1913,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
+    - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
@@ -1672,6 +1992,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
     - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
@@ -1680,12 +2004,24 @@ PrefabInstance:
       value: Floor cube kitchen (4)
       objectReference: {fileID: 0}
     - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
     - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
@@ -1695,6 +2031,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
+    - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
@@ -1770,6 +2110,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
     - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
@@ -1778,12 +2122,24 @@ PrefabInstance:
       value: Floor cube kitchen (16)
       objectReference: {fileID: 0}
     - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
     - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
@@ -1793,6 +2149,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
+    - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
@@ -1868,6 +2228,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
     - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
@@ -1876,12 +2240,24 @@ PrefabInstance:
       value: Floor cube kitchen (11)
       objectReference: {fileID: 0}
     - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
     - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
@@ -1891,6 +2267,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
+    - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
@@ -1966,6 +2346,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
     - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4783631744076890379, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
@@ -1974,12 +2358,24 @@ PrefabInstance:
       value: Floor cube kitchen (9)
       objectReference: {fileID: 0}
     - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243733971593495225, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
       objectReference: {fileID: 0}
     - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300236881790441005, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6777490079835606302, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
@@ -1989,6 +2385,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: d20548b59d24ffd48895ffac58af8b7b, type: 2}
+    - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7304736207372506154, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
       propertyPath: m_TagString
       value: MirrorWorldObject
