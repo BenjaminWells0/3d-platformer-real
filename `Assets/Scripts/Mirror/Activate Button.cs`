@@ -1,0 +1,17 @@
+using UnityEngine;
+
+public class NewMonoBehaviourScript : MonoBehaviour
+{
+    [SerializeField] private GameObject wall;
+    [SerializeField] private float speed = 1f;
+      
+    private void OnMouseUpAsButton()
+    {
+        if (wall == null)
+        {
+            return;
+        }
+
+        wall.transform.position += Vector3.up * speed;
+    }
+}
