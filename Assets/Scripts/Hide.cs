@@ -6,7 +6,7 @@ public class Hide : MonoBehaviour
     [SerializeField] private Transform insideLockerPosition;
     [SerializeField] private Transform outOfLockerPosition;
     [SerializeField] private InsideLocker insideScript;
-
+    [SerializeField] private float goInRange = 5f;
     private void OnMouseDown()
     {
         if (insideScript == null) return;
@@ -16,6 +16,10 @@ public class Hide : MonoBehaviour
 
             Player localPlayer = GetLocalPlayer();
             if (localPlayer == null) return;
+            
+            float distanceToLocker = Vector3.Distance(transform.position, localPlayer.transform.position);
+            if (distanceToLocker > goInRange) return;
+
             if (insideScript.insideLocker == false)
             {
                 Debug.Log($"{localPlayer.name} clicked locker: ");
@@ -46,6 +50,9 @@ public class Hide : MonoBehaviour
         else
         {
             Player localPlayer = GetLocalPlayer();
+            float distanceToLocker = Vector3.Distance(transform.position, localPlayer.transform.position);
+            if (distanceToLocker > goInRange) return;
+
             if (localPlayer != currentPlayerInside) return;
             Debug.Log($"{currentPlayerInside.name} leaving locker");
             currentPlayerInside.transform.position = outOfLockerPosition.position;
@@ -70,7 +77,7 @@ public class Hide : MonoBehaviour
 
                 Player nearestPlayer = null;
                 float shortestDistance = Mathf.Infinity;
-
+        
                 foreach (Player p in allPlayers)
                 {
                     float distance = Vector3.Distance(transform.position, p.transform.position);

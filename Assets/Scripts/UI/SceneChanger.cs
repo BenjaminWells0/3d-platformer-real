@@ -86,7 +86,7 @@ public class SceneChanger : MonoBehaviour
         {
             
             LoadDeath();
-            
+            LoadAsylum();
         }
 
     }
