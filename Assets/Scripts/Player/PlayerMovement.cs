@@ -29,15 +29,12 @@ public class PlayerMovement : MonoBehaviour
 
         if (playerInput != null)
         {
-            // Find the specific actions inside this player's isolated asset map instance
-            // Make sure these strings match the exact names of your actions in the editor asset!
+            
             moveAction = playerInput.actions.FindAction("Move");
             jumpAction = playerInput.actions.FindAction("Jump");
             crouchAction = playerInput.actions.FindAction("Crouch");
         }
 
-        // Your existing camera code remains right here...
-        // Replace the old Camera.main line inside Start() with this:
         Camera localCam = GetComponentInChildren<Camera>();
         if (localCam != null)
         {

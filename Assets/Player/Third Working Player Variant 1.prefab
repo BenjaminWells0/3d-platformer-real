@@ -28,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 486264838603040222}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.34507993, y: 0.171471, z: -0.06427911, w: 0.9205356}
-  m_LocalPosition: {x: -0.7052153, y: 2.888566, z: -1.8272803}
+  m_LocalRotation: {x: -0.035443567, y: -0.9408423, z: -0.10403837, w: 0.3205241}
+  m_LocalPosition: {x: 2.116333, y: 0.4038453, z: 2.7455688}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -201,8 +201,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7527675455911961737}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.3450799, y: 0.17147098, z: -0.0642791, w: 0.92053556}
-  m_LocalPosition: {x: -0.7052153, y: 2.888566, z: -1.8272803}
+  m_LocalRotation: {x: -0.035443567, y: -0.9408423, z: -0.10403838, w: 0.32052407}
+  m_LocalPosition: {x: 2.116333, y: 0.4038453, z: 2.7455688}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -285,7 +285,7 @@ MonoBehaviour:
     SplineCurvature: 0.5
   RecenteringTarget: 1
   HorizontalAxis:
-    Value: 111.10348
+    Value: 127.62567
     Center: -60
     Range: {x: -180, y: 180}
     Wrap: 1
@@ -295,7 +295,7 @@ MonoBehaviour:
       Time: 2
     Restrictions: 0
   VerticalAxis:
-    Value: 55.860073
+    Value: 173.35513
     Center: 45
     Range: {x: -180, y: 180}
     Wrap: 1
@@ -431,7 +431,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragLook
   lookActionReference: {fileID: 940553563908505091, guid: a66fc44489699e54aa518903e2a22f7a, type: 3}
-  lookAroundActionReference: {fileID: 1940409107246026392, guid: a66fc44489699e54aa518903e2a22f7a, type: 3}
 --- !u!114 &3331029421349275525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -463,7 +462,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1044370921855460667, guid: 7c1015373ce9adf41b5f40dd4870d4ad, type: 3}
       propertyPath: m_NeverAutoSwitchControlSchemes
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1147285869105273615, guid: 7c1015373ce9adf41b5f40dd4870d4ad, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'

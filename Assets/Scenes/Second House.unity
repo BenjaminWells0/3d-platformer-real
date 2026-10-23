@@ -27774,6 +27774,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DragLook
   lookActionReference: {fileID: 0}
   lookAroundActionReference: {fileID: 0}
+  gamepadLookSensitivity: 2.5
 --- !u!114 &1875844593
 MonoBehaviour:
   m_ObjectHideFlags: 0
