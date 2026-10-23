@@ -51,13 +51,18 @@ public class RotateMirrorCamera : MonoBehaviour
         if (keyboard == null)
             return;
 
-        float dir = 0f;
-        if (keyboard.qKey.isPressed || keyboard.leftArrowKey.isPressed) dir -= 1f;
-        if (keyboard.eKey.isPressed || keyboard.rightArrowKey.isPressed) dir += 1f;
+        float horizontal = 0f;
+        float vertical = 0f;
 
-        if (Mathf.Approximately(dir, 0f))
-            return;
+        if (keyboard.qKey.isPressed || keyboard.commaKey.isPressed) horizontal -= 1f;
+        if (keyboard.eKey.isPressed || keyboard.periodKey.isPressed) horizontal += 1f;
+        if (keyboard.digit2Key.isPressed || keyboard.lKey.isPressed) vertical += 1f;
+        if (keyboard.xKey.isPressed) vertical -= 1f;
 
-        _puzzleCamTransform.Rotate(Vector3.right, dir * rotationSpeed * Time.deltaTime, Space.World);
+        
+        _puzzleCamTransform.Rotate(Vector3.up, horizontal * rotationSpeed * Time.deltaTime, Space.World);
+
+        
+        _puzzleCamTransform.Rotate(Vector3.right, -vertical * rotationSpeed * Time.deltaTime, Space.Self);
     }
 }
