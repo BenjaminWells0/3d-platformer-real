@@ -814,7 +814,7 @@ PrefabInstance:
     - target: {fileID: 3375442315491659719, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 2142851891}
+      objectReference: {fileID: 0}
     - target: {fileID: 3579378875473071586, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
       propertyPath: m_Name
       value: Lockers Test room
@@ -862,7 +862,7 @@ PrefabInstance:
     - target: {fileID: 6460071951344176834, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 2142851891}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2563,7 +2563,7 @@ PrefabInstance:
     - target: {fileID: 3375442315491659719, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 2142851891}
+      objectReference: {fileID: 0}
     - target: {fileID: 3579378875473071586, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
       propertyPath: m_Name
       value: Lockers Test room (2)
@@ -2611,7 +2611,7 @@ PrefabInstance:
     - target: {fileID: 6460071951344176834, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 2142851891}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2886,7 +2886,7 @@ PrefabInstance:
     - target: {fileID: 3375442315491659719, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 2142851891}
+      objectReference: {fileID: 0}
     - target: {fileID: 3579378875473071586, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
       propertyPath: m_Name
       value: Lockers Test room
@@ -2950,7 +2950,7 @@ PrefabInstance:
     - target: {fileID: 6460071951344176834, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 2142851891}
+      objectReference: {fileID: 0}
     - target: {fileID: 6460071951344176834, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
       propertyPath: outOfLocker
       value: 
@@ -4856,72 +4856,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1723684461329037871, guid: e4a01bfc411e5514faeef74cb1101229, type: 3}
   m_PrefabInstance: {fileID: 321501986}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &328043134
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7874031018021627184, guid: 7c1015373ce9adf41b5f40dd4870d4ad, type: 3}
-      propertyPath: m_Name
-      value: Third Working Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7874031018021627184, guid: 7c1015373ce9adf41b5f40dd4870d4ad, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8258909530788877867, guid: 7c1015373ce9adf41b5f40dd4870d4ad, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -44.27
-      objectReference: {fileID: 0}
-    - target: {fileID: 8258909530788877867, guid: 7c1015373ce9adf41b5f40dd4870d4ad, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.72
-      objectReference: {fileID: 0}
-    - target: {fileID: 8258909530788877867, guid: 7c1015373ce9adf41b5f40dd4870d4ad, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -13.169
-      objectReference: {fileID: 0}
-    - target: {fileID: 8258909530788877867, guid: 7c1015373ce9adf41b5f40dd4870d4ad, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8258909530788877867, guid: 7c1015373ce9adf41b5f40dd4870d4ad, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8258909530788877867, guid: 7c1015373ce9adf41b5f40dd4870d4ad, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8258909530788877867, guid: 7c1015373ce9adf41b5f40dd4870d4ad, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8258909530788877867, guid: 7c1015373ce9adf41b5f40dd4870d4ad, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8258909530788877867, guid: 7c1015373ce9adf41b5f40dd4870d4ad, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 8258909530788877867, guid: 7c1015373ce9adf41b5f40dd4870d4ad, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7c1015373ce9adf41b5f40dd4870d4ad, type: 3}
---- !u!4 &328043135 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8258909530788877867, guid: 7c1015373ce9adf41b5f40dd4870d4ad, type: 3}
-  m_PrefabInstance: {fileID: 328043134}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &331255138
 PrefabInstance:
@@ -7232,7 +7166,7 @@ PrefabInstance:
     - target: {fileID: 3375442315491659719, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 2142851891}
+      objectReference: {fileID: 0}
     - target: {fileID: 3579378875473071586, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
       propertyPath: m_Name
       value: Lockers Test room
@@ -7280,7 +7214,7 @@ PrefabInstance:
     - target: {fileID: 6460071951344176834, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 2142851891}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8816,7 +8750,7 @@ PrefabInstance:
     - target: {fileID: 3375442315491659719, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 2142851891}
+      objectReference: {fileID: 0}
     - target: {fileID: 3579378875473071586, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
       propertyPath: m_Name
       value: Lockers Test room
@@ -8864,7 +8798,7 @@ PrefabInstance:
     - target: {fileID: 6460071951344176834, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 2142851891}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16395,7 +16329,7 @@ PrefabInstance:
     - target: {fileID: 3375442315491659719, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 2142851891}
+      objectReference: {fileID: 0}
     - target: {fileID: 3579378875473071586, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
       propertyPath: m_Name
       value: Lockers Test room (4)
@@ -16443,7 +16377,7 @@ PrefabInstance:
     - target: {fileID: 6460071951344176834, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 2142851891}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16998,8 +16932,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1273862219}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2381727, y: 0, z: 0, w: 0.9712228}
-  m_LocalPosition: {x: -44.27, y: 7.1878023, z: -15.636803}
+  m_LocalRotation: {x: -0.098628625, y: -0.4386312, z: -0.048503853, w: 0.8919207}
+  m_LocalPosition: {x: -15.167787, y: 4.753845, z: 48.20727}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17467,7 +17401,7 @@ PrefabInstance:
     - target: {fileID: 3375442315491659719, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 2142851891}
+      objectReference: {fileID: 0}
     - target: {fileID: 3579378875473071586, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
       propertyPath: m_Name
       value: Lockers Test room (1)
@@ -17531,7 +17465,7 @@ PrefabInstance:
     - target: {fileID: 6460071951344176834, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 2142851891}
+      objectReference: {fileID: 0}
     - target: {fileID: 6460071951344176834, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
       propertyPath: outOfLocker
       value: 
@@ -26175,7 +26109,7 @@ PrefabInstance:
     - target: {fileID: 3375442315491659719, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 2142851891}
+      objectReference: {fileID: 0}
     - target: {fileID: 3579378875473071586, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
       propertyPath: m_Name
       value: Lockers Test room (3)
@@ -26223,7 +26157,7 @@ PrefabInstance:
     - target: {fileID: 6460071951344176834, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 2142851891}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27738,268 +27672,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1590628648207023695, guid: b3122d0bf8d4f294a95acab118d98dc6, type: 3}
   m_PrefabInstance: {fileID: 1870640203}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1875844591
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1875844597}
-  - component: {fileID: 1875844596}
-  - component: {fileID: 1875844595}
-  - component: {fileID: 1875844594}
-  - component: {fileID: 1875844598}
-  - component: {fileID: 1875844593}
-  - component: {fileID: 1875844592}
-  m_Layer: 0
-  m_Name: CinemachineCamera
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1875844592
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1875844591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ebda5c10b1715b42aa4cf5e1ce8a48a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DragLook
-  lookActionReference: {fileID: 0}
-  lookAroundActionReference: {fileID: 0}
-  gamepadLookSensitivity: 2.5
---- !u!114 &1875844593
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1875844591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89875cdc57c54474a8a74efd9b2a3b5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineInputAxisController
-  ScanRecursively: 1
-  SuppressInputWhileBlending: 1
-  IgnoreTimeScale: 1
-  m_ControllerManager:
-    Controllers:
-    - Name: Look Orbit X
-      Owner: {fileID: 1875844595}
-      Enabled: 1
-      Input:
-        InputAction: {fileID: -5630151704836100654, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-        Gain: 15
-        CancelDeltaTime: 0
-      InputValue: 0
-      Driver:
-        AccelTime: 0
-        DecelTime: 0
-    - Name: Look Orbit Y
-      Owner: {fileID: 1875844595}
-      Enabled: 1
-      Input:
-        InputAction: {fileID: -5630151704836100654, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-        Gain: 15
-        CancelDeltaTime: 0
-      InputValue: 0
-      Driver:
-        AccelTime: 0
-        DecelTime: 0
-    - Name: Orbit Scale
-      Owner: {fileID: 1875844595}
-      Enabled: 0
-      Input:
-        InputAction: {fileID: 6240969308177333660, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-        Gain: 1
-        CancelDeltaTime: 0
-      InputValue: 0
-      Driver:
-        AccelTime: 0
-        DecelTime: 0
-  PlayerIndex: -1
-  AutoEnableInputs: 1
---- !u!114 &1875844594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1875844591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e8b78ac948f05a46a6d8339a503172b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineHardLookAt
-  LookAtOffset: {x: 0, y: 1.18, z: 0}
---- !u!114 &1875844595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1875844591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b5d7c088409d9a40b7b09aa707777f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineOrbitalFollow
-  TargetOffset: {x: 0, y: 0, z: 0}
-  TrackerSettings:
-    BindingMode: 4
-    PositionDamping: {x: 1, y: 1, z: 1}
-    AngularDampingMode: 0
-    RotationDamping: {x: 1, y: 1, z: 1}
-    QuaternionDamping: 1
-  OrbitStyle: 0
-  Radius: 3.49
-  Orbits:
-    Top:
-      Radius: 2
-      Height: 5
-    Center:
-      Radius: 4
-      Height: 2.25
-    Bottom:
-      Radius: 2.5
-      Height: 0.1
-    SplineCurvature: 0.5
-  RecenteringTarget: 1
-  HorizontalAxis:
-    Value: 0
-    Center: -60
-    Range: {x: -180, y: 180}
-    Wrap: 1
-    Recentering:
-      Enabled: 0
-      Wait: 1
-      Time: 2
-    Restrictions: 0
-  VerticalAxis:
-    Value: 45
-    Center: 45
-    Range: {x: -180, y: 180}
-    Wrap: 1
-    Recentering:
-      Enabled: 0
-      Wait: 1
-      Time: 2
-    Restrictions: 0
-  RadialAxis:
-    Value: 1
-    Center: 1
-    Range: {x: 1, y: 1}
-    Wrap: 0
-    Recentering:
-      Enabled: 0
-      Wait: 1
-      Time: 2
-    Restrictions: 0
---- !u!114 &1875844596
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1875844591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9dfa5b682dcd46bda6128250e975f58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineCamera
-  Priority:
-    Enabled: 0
-    m_Value: 0
-  OutputChannel: 1
-  StandbyUpdate: 2
-  m_StreamingVersion: 20241001
-  m_LegacyPriority: 0
-  Target:
-    TrackingTarget: {fileID: 328043135}
-    LookAtTarget: {fileID: 0}
-    CustomLookAtTarget: 0
-  Lens:
-    FieldOfView: 60.000004
-    OrthographicSize: 5
-    NearClipPlane: 0.3
-    FarClipPlane: 1000
-    Dutch: 0
-    ModeOverride: 0
-    PhysicalProperties:
-      GateFit: 2
-      SensorSize: {x: 21.946, y: 16.002}
-      LensShift: {x: 0, y: 0}
-      FocusDistance: 10
-      Iso: 200
-      ShutterSpeed: 0.005
-      Aperture: 16
-      BladeCount: 5
-      Curvature: {x: 2, y: 11}
-      BarrelClipping: 0.25
-      Anamorphism: 0
-  BlendHint: 0
---- !u!4 &1875844597
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1875844591}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.2381727, y: 0, z: 0, w: 0.9712228}
-  m_LocalPosition: {x: -44.27, y: 7.1878023, z: -15.636803}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 19.247, y: 0, z: 0.02}
---- !u!114 &1875844598
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1875844591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbe43d662878a7c43bcd44d43c9e2094, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineDeoccluder
-  CollideAgainst:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  IgnoreTag: Locker
-  TransparentLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  MinimumDistanceFromTarget: 0.3
-  AvoidObstacles:
-    Enabled: 1
-    DistanceLimit: 0
-    MinimumOcclusionTime: 0
-    CameraRadius: 0
-    UseFollowTarget:
-      Enabled: 0
-      YOffset: 0
-    Strategy: 0
-    MaximumEffort: 4
-    SmoothingTime: 0
-    Damping: 0.4
-    DampingWhenOccluded: 0.2
-  ShotQualityEvaluation:
-    Enabled: 0
-    OptimalDistance: 10
-    NearLimit: 5
-    FarLimit: 30
-    MaxQualityBoost: 0.2
 --- !u!1001 &1875868490
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33073,6 +32745,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a526ba2d0d2fca74c889e14b21e2eeb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoopHelp
+  p1KeyboardScheme: KeyboardLeft
+  p2KeyboardScheme: KeyboardRight
+  gamepadControlSchemeName: Gamepad
 --- !u!114 &2119717734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33446,17 +33121,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1723684461329037871, guid: e4a01bfc411e5514faeef74cb1101229, type: 3}
   m_PrefabInstance: {fileID: 2142055607}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2142851891 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6464624493874915812, guid: 7c1015373ce9adf41b5f40dd4870d4ad, type: 3}
-  m_PrefabInstance: {fileID: 328043134}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9188a56e70e382b43982f566fcb8a96d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Player
 --- !u!1001 &2142942885
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33858,8 +33522,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 1273862222}
   - {fileID: 1024293649}
-  - {fileID: 1875844597}
-  - {fileID: 328043134}
   - {fileID: 481356090}
   - {fileID: 1068718398}
   - {fileID: 1048280980}
