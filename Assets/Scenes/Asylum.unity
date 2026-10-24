@@ -22842,6 +22842,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a526ba2d0d2fca74c889e14b21e2eeb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoopHelp
+  player1Prefab: {fileID: 6545311237756115649, guid: 94d833d26b3fbb64b89231125cf415f2, type: 3}
+  player2Prefab: {fileID: 6545311237756115649, guid: b2b3cb76a6ceed94c904bdf8d0363ef0, type: 3}
+  p1KeyboardScheme: KeyboardLeft
+  gamepadControlSchemeName: Gamepad
+  p2KeyboardFallbackScheme: KeyboardRight
 --- !u!114 &551269604
 MonoBehaviour:
   m_ObjectHideFlags: 0

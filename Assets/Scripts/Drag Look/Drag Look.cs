@@ -4,7 +4,6 @@ using UnityEngine.InputSystem;
 
 public class DragLook : MonoBehaviour
 {
-    private PlayerInput playerInput;
     private CinemachineInputAxisController axisController;
 
     [Header("Input References")]
@@ -13,56 +12,42 @@ public class DragLook : MonoBehaviour
 
     private void Start()
     {
-        playerInput = GetComponentInParent<PlayerInput>();
+        // Find the input axis controller component attached alongside the camera
         axisController = GetComponentInChildren<CinemachineInputAxisController>();
 
         // Force the action map data channel awake at start
-        if (lookActionReference != null) lookActionReference.action.Enable();
+        if (lookActionReference != null)
+            lookActionReference.action.Enable();
 
-        // Player 2 doesn't use DragLook, so we only run this initialization for Player 1
-        if (playerInput != null && playerInput.playerIndex == 0)
-        {
-            ClearCinemachineInput();
-        }
+        // Start with the input cleared so the camera doesn't drift until right-clicked
+        ClearCinemachineInput();
     }
 
     private void Update()
     {
-        if (axisController == null || playerInput == null) return;
+        if (axisController == null || Mouse.current == null) return;
 
         // =================================================================
-        // PLAYER 2 (RIGHT VIEWPORT): BYPASSED entirely 
+        // PLAYER 1 (LEFT VIEWPORT): MOUSE DRAGGING BOUNDS TRACKING
         // =================================================================
-        if (playerInput.playerIndex == 1)
+        if (Mouse.current.rightButton.isPressed)
         {
-            // Player 2 ignores this script entirely so native Input System + Cinemachine works!
-            return;
-        }
+            Vector2 mouseScreenPos = Mouse.current.position.ReadValue();
+            float screenMidpoint = Screen.width / 2f;
 
-        // =================================================================
-        // PLAYER 1 (LEFT VIEWPORT): RAW MOUSE DRAGGING BOUNDS
-        // =================================================================
-        if (playerInput.playerIndex == 0 && Mouse.current != null)
-        {
-            if (Mouse.current.rightButton.isPressed)
+            // Player 1 only moves their camera if right-click happens on the LEFT half of the screen
+            if (mouseScreenPos.x < screenMidpoint)
             {
-                Vector2 mouseScreenPos = Mouse.current.position.ReadValue();
-                float screenMidpoint = Screen.width / 2f;
-
-                // Player 1 only moves their camera if right-click started on the LEFT screen half
-                if (mouseScreenPos.x < screenMidpoint)
-                {
-                    InjectMouseDeltaInput();
-                }
-                else
-                {
-                    ClearCinemachineInput();
-                }
+                InjectMouseDeltaInput();
             }
             else
             {
                 ClearCinemachineInput();
             }
+        }
+        else
+        {
+            ClearCinemachineInput();
         }
     }
 
@@ -70,14 +55,16 @@ public class DragLook : MonoBehaviour
     {
         if (axisController == null || axisController.Controllers == null || axisController.Controllers.Count < 2 || lookActionReference == null) return;
 
-        axisController.Controllers[0].Input.InputAction = lookActionReference;
-        axisController.Controllers[1].Input.InputAction = lookActionReference;
+        // Safely pass the target look action tracking map back into the camera driver channels
+        axisController.Controllers[0].Input.InputAction = lookActionReference; // Horizontal Pan
+        axisController.Controllers[1].Input.InputAction = lookActionReference; // Vertical Tilt
     }
 
     private void ClearCinemachineInput()
     {
         if (axisController == null || axisController.Controllers == null || axisController.Controllers.Count < 2) return;
 
+        // Disconnect the action map reference when not dragging so the camera freezes instantly
         foreach (var axisSource in axisController.Controllers)
         {
             axisSource.Input.InputAction = null;

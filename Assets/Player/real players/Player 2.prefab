@@ -28,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 486264838603040222}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.035443567, y: -0.9408423, z: -0.10403837, w: 0.3205241}
-  m_LocalPosition: {x: 2.116333, y: 0.4038453, z: 2.7455688}
+  m_LocalRotation: {x: 0.029228063, y: 0.76245666, z: -0.03452618, w: 0.645456}
+  m_LocalPosition: {x: 60.364098, y: 3.1634412, z: -24.112003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -110,7 +110,7 @@ MonoBehaviour:
   ShowCameraFrustum: 1
   IgnoreTimeScale: 0
   WorldUpOverride: {fileID: 0}
-  ChannelMask: 2
+  ChannelMask: 4
   UpdateMethod: 2
   BlendUpdateMethod: 1
   LensModeOverride:
@@ -184,7 +184,6 @@ GameObject:
   - component: {fileID: 2678677513155069154}
   - component: {fileID: 7126861490842282302}
   - component: {fileID: 7270360138313142828}
-  - component: {fileID: 5079605527177558776}
   - component: {fileID: 3331029421349275525}
   m_Layer: 0
   m_Name: CinemachineCamera
@@ -201,8 +200,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7527675455911961737}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.035443567, y: -0.9408423, z: -0.10403838, w: 0.32052407}
-  m_LocalPosition: {x: 2.116333, y: 0.4038453, z: 2.7455688}
+  m_LocalRotation: {x: 0.1486884, y: 0.24921176, z: -0.038752984, w: 0.95618176}
+  m_LocalPosition: {x: -1.369892, y: 2.0744748, z: -2.4494996}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -223,7 +222,7 @@ MonoBehaviour:
   Priority:
     Enabled: 0
     m_Value: 0
-  OutputChannel: 2
+  OutputChannel: 4
   StandbyUpdate: 2
   m_StreamingVersion: 20241001
   m_LegacyPriority: 0
@@ -285,7 +284,7 @@ MonoBehaviour:
     SplineCurvature: 0.5
   RecenteringTarget: 1
   HorizontalAxis:
-    Value: 127.62567
+    Value: 119.21626
     Center: -60
     Range: {x: -180, y: 180}
     Wrap: 1
@@ -295,7 +294,7 @@ MonoBehaviour:
       Time: 2
     Restrictions: 0
   VerticalAxis:
-    Value: 173.35513
+    Value: 36.47026
     Center: 45
     Range: {x: -180, y: 180}
     Wrap: 1
@@ -388,7 +387,7 @@ MonoBehaviour:
       Enabled: 1
       Input:
         InputAction: {fileID: 940553563908505091, guid: a66fc44489699e54aa518903e2a22f7a, type: 3}
-        Gain: 15
+        Gain: 300
         CancelDeltaTime: 0
       InputValue: 0
       Driver:
@@ -399,7 +398,7 @@ MonoBehaviour:
       Enabled: 1
       Input:
         InputAction: {fileID: 940553563908505091, guid: a66fc44489699e54aa518903e2a22f7a, type: 3}
-        Gain: 10
+        Gain: 200
         CancelDeltaTime: 0
       InputValue: 0
       Driver:
@@ -416,21 +415,8 @@ MonoBehaviour:
       Driver:
         AccelTime: 0
         DecelTime: 0
-  PlayerIndex: -1
+  PlayerIndex: 1
   AutoEnableInputs: 0
---- !u!114 &5079605527177558776
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7527675455911961737}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ebda5c10b1715b42aa4cf5e1ce8a48a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DragLook
-  lookActionReference: {fileID: 940553563908505091, guid: a66fc44489699e54aa518903e2a22f7a, type: 3}
 --- !u!114 &3331029421349275525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -458,11 +444,11 @@ PrefabInstance:
       objectReference: {fileID: 6709781427678473280}
     - target: {fileID: 1044370921855460667, guid: 7c1015373ce9adf41b5f40dd4870d4ad, type: 3}
       propertyPath: m_DefaultControlScheme
-      value: KeyboardLeft
+      value: KeyboardRight
       objectReference: {fileID: 0}
     - target: {fileID: 1044370921855460667, guid: 7c1015373ce9adf41b5f40dd4870d4ad, type: 3}
       propertyPath: m_NeverAutoSwitchControlSchemes
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1147285869105273615, guid: 7c1015373ce9adf41b5f40dd4870d4ad, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -482,7 +468,7 @@ PrefabInstance:
       objectReference: {fileID: 8736284455485329080, guid: a66fc44489699e54aa518903e2a22f7a, type: 3}
     - target: {fileID: 7874031018021627184, guid: 7c1015373ce9adf41b5f40dd4870d4ad, type: 3}
       propertyPath: m_Name
-      value: Third Working Player Variant 1
+      value: Player 2
       objectReference: {fileID: 0}
     - target: {fileID: 7874031018021627184, guid: 7c1015373ce9adf41b5f40dd4870d4ad, type: 3}
       propertyPath: m_IsActive
