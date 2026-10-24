@@ -47,18 +47,29 @@ public class RotateMirrorCamera : MonoBehaviour
         if (!canRotateMirror || _puzzleCamTransform == null)
             return;
 
-        var keyboard = Keyboard.current;
-        if (keyboard == null)
-            return;
+
 
         float horizontal = 0f;
         float vertical = 0f;
 
-        if (keyboard.qKey.isPressed || keyboard.commaKey.isPressed) horizontal -= 1f;
-        if (keyboard.eKey.isPressed || keyboard.periodKey.isPressed) horizontal += 1f;
-        if (keyboard.digit2Key.isPressed || keyboard.lKey.isPressed) vertical += 1f;
+        Gamepad playerGamepad = Gamepad.all[0];
+        if (Gamepad.all.Count == 0)
+            return;
+        if (playerGamepad != null)
+        {
+            if (playerGamepad.dpad.left.isPressed) horizontal += 1f;
+            if (playerGamepad.dpad.right.isPressed) horizontal -= 1f;
+            if (playerGamepad.dpad.up.isPressed) vertical += 1f;
+            if (playerGamepad.dpad.down.isPressed) vertical -= 1f;
+        }
+        var keyboard = Keyboard.current;
+        if (keyboard != null)
+        { 
+        if (keyboard.qKey.isPressed) horizontal += 1f;
+        if (keyboard.eKey.isPressed) horizontal -= 1f;
+        if (keyboard.digit2Key.isPressed) vertical += 1f;
         if (keyboard.xKey.isPressed) vertical -= 1f;
-
+        }
         
         _puzzleCamTransform.Rotate(Vector3.up, horizontal * rotationSpeed * Time.deltaTime, Space.World);
 
