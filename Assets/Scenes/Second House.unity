@@ -12194,7 +12194,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &958444422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23515,6 +23515,22 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 85fc3a16d9fd7284ca579dd41153f2eb, type: 2}
+    - target: {fileID: 6753541934165875197, guid: 3270677f806aad14fb5dd07575af7970, type: 3}
+      propertyPath: m_Size.y
+      value: 1.6186862
+      objectReference: {fileID: 0}
+    - target: {fileID: 6753541934165875197, guid: 3270677f806aad14fb5dd07575af7970, type: 3}
+      propertyPath: m_Size.z
+      value: 3.2655692
+      objectReference: {fileID: 0}
+    - target: {fileID: 6753541934165875197, guid: 3270677f806aad14fb5dd07575af7970, type: 3}
+      propertyPath: m_Center.y
+      value: 0.30935
+      objectReference: {fileID: 0}
+    - target: {fileID: 6753541934165875197, guid: 3270677f806aad14fb5dd07575af7970, type: 3}
+      propertyPath: m_Center.z
+      value: -1.1327996
+      objectReference: {fileID: 0}
     - target: {fileID: 6754736096578477578, guid: 3270677f806aad14fb5dd07575af7970, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
