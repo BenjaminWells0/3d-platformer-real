@@ -23,7 +23,7 @@ public class ButtonSceneChanger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Keyboard.current[Key.Q].wasPressedThisFrame)
+        if (Keyboard.current[Key.B].wasPressedThisFrame || Gamepad.current.bButton.wasPressedThisFrame)
         {
             
             callChanger();

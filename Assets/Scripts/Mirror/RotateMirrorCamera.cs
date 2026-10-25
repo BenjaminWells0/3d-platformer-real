@@ -65,10 +65,10 @@ public class RotateMirrorCamera : MonoBehaviour
         var keyboard = Keyboard.current;
         if (keyboard != null)
         { 
-        if (keyboard.qKey.isPressed) horizontal += 1f;
-        if (keyboard.eKey.isPressed) horizontal -= 1f;
-        if (keyboard.digit2Key.isPressed) vertical += 1f;
-        if (keyboard.xKey.isPressed) vertical -= 1f;
+        if (keyboard.leftArrowKey.isPressed) horizontal += 1f;
+        if (keyboard.rightArrowKey.isPressed) horizontal -= 1f;
+        if (keyboard.upArrowKey.isPressed) vertical += 1f;
+        if (keyboard.downArrowKey.isPressed) vertical -= 1f;
         }
         
         _puzzleCamTransform.Rotate(Vector3.up, horizontal * rotationSpeed * Time.deltaTime, Space.World);

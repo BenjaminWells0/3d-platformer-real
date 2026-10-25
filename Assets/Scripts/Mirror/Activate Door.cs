@@ -15,4 +15,11 @@ public class ActivateDoor : MonoBehaviour
         // Rotate the door around the Y axis by 'speed' degrees
         door.transform.Rotate(Vector3.up, amount);
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (door == null)
+        {
+            return;
+        }
+    }
 }
