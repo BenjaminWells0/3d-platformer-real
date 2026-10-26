@@ -15178,7 +15178,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &372467958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15628,8 +15628,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 385663822}
-  - component: {fileID: 385663823}
   - component: {fileID: 385663824}
+  - component: {fileID: 385663825}
   m_Layer: 0
   m_Name: RotateCamera
   m_TagString: Untagged
@@ -15652,21 +15652,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2065546145582243378}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &385663823
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 385663821}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d27182cd0c5c0a649ae734297fa9dbd3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RotateMirrorCamera
-  canRotateMirror: 0
-  puzzleCamera: {fileID: 2377803415433377756}
-  rotationSpeed: 10
 --- !u!65 &385663824
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15688,6 +15673,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 9.911814, y: 5.8502984, z: 8.817961}
   m_Center: {x: 0.10005358, y: 2.4251502, z: -0.39468908}
+--- !u!114 &385663825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385663821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f3a83f831fb3f4419a67147e481c31b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AsylumRotateMirror
+  canRotateMirror: 0
+  puzzleCamera: {fileID: 2377803415433377756}
+  rotationSpeed: 10
 --- !u!1001 &385908444
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -91758,13 +91758,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7380241487841691713}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: -0.7071068, w: 0}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -332, y: 13.09, z: -67.37}
   m_LocalScale: {x: -1.2631502, y: 0.39519992, z: 0.92865026}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 307805463}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: -180}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!114 &7438564148189978395
 MonoBehaviour:
   m_ObjectHideFlags: 0
