@@ -1,9 +1,10 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class Hide : MonoBehaviour
 {
-    private Player currentPlayerInside = null;
+    private List<Player> currentPlayerInside = new List<Player>();
     [SerializeField] private Transform insideLockerPosition;
     [SerializeField] private Transform outOfLockerPosition;
     [SerializeField] private InsideLocker insideScript;
@@ -11,14 +12,11 @@ public class Hide : MonoBehaviour
     private void Locker()
     {
         if (insideScript == null) return;
-
-        if (currentPlayerInside == null)
+        Player localPlayer = GetLocalPlayer();
+        if (!currentPlayerInside.Contains(localPlayer))
         {
-
-            Player localPlayer = GetLocalPlayer();
             if (localPlayer == null) return;
-            
-           
+            currentPlayerInside.Add(localPlayer);
 
             if (insideScript.insideLocker == false)
             {
@@ -26,7 +24,7 @@ public class Hide : MonoBehaviour
                 bool wasSeenEntering = localPlayer.WasSeenRecently(0.5f);
 
                 localPlayer.transform.position = insideLockerPosition.position;
-                currentPlayerInside = localPlayer;
+                
                 insideScript.insideLocker = true;
 
                 if (wasSeenEntering)
@@ -49,23 +47,25 @@ public class Hide : MonoBehaviour
         }
         else
         {
-            Player localPlayer = GetLocalPlayer();
             
+            currentPlayerInside.Remove(localPlayer);
 
-            if (localPlayer != currentPlayerInside) return;
-            
-            currentPlayerInside.transform.position = outOfLockerPosition.position;
+            localPlayer.transform.position = outOfLockerPosition.position;
 
-            currentPlayerInside.isHidden = false;
-            currentPlayerInside.isSeen = false;
+            localPlayer.isHidden = false;
+            localPlayer.isSeen = false;
 
             EnemyState enemy = FindAnyObjectByType<EnemyState>();
             if (enemy != null)
             {
                 enemy.ResetLockerHunt();
             }
-            insideScript.insideLocker = false;
-            currentPlayerInside = null;
+            if(currentPlayerInside.Count == 0)
+            {
+                insideScript.insideLocker = false;
+            }
+            
+            
         }
     }
     private void Update()
@@ -73,6 +73,7 @@ public class Hide : MonoBehaviour
         if(Keyboard.current.bKey.wasPressedThisFrame && canGoInLocker == true)
         {
             Locker();
+
         }
         if(Gamepad.current.bButton.wasPressedThisFrame && canGoInLocker == true)
         {
