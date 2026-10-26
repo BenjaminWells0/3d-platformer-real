@@ -220,7 +220,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -285,8 +285,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.91853714, y: 1.7303718, z: 1.1392481}
-  m_Center: {x: 0.14557838, y: 0.3651856, z: -0.034603834}
+  m_Size: {x: 0.7882258, y: 1.7303718, z: 1.1392481}
+  m_Center: {x: 0.08042272, y: 0.3651856, z: -0.034603834}
 --- !u!114 &3375442315491659719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -745,7 +745,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -1081,7 +1081,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -1563,7 +1563,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -1787,7 +1787,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -1899,7 +1899,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -1957,10 +1957,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24d2405aa41351e44bc0f67e04b53953, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hide
-  player: {fileID: 0}
   insideLockerPosition: {fileID: 5641091315933899887}
   outOfLockerPosition: {fileID: 7067751875471776470}
   insideScript: {fileID: 3375442315491659719}
+  canGoInLocker: 0
 --- !u!65 &5241217890171825513
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1976,12 +1976,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.27643475, y: 1.9772139, z: 1.0162838}
-  m_Center: {x: 0.5868663, y: 0.19263253, z: -0.008141836}
+  m_Size: {x: 2.2712975, y: 1.9772139, z: 1.0162838}
+  m_Center: {x: 0.5999063, y: 0.19263253, z: -0.008141836}
 --- !u!1 &8177724300178593416
 GameObject:
   m_ObjectHideFlags: 0
@@ -2233,7 +2233,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}

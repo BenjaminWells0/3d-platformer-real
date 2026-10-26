@@ -98,10 +98,12 @@ public class EnemyState : MonoBehaviour
     }
     private void GoToNextWaypoint()
     {
-        
-        Debug.Log("Going to waypoint " + currentWayPoint);
+        if (player != null)
+        {
+            Debug.Log("Going to waypoint " + currentWayPoint);
 
-        agent.SetDestination(patrolPoints[currentWayPoint].position);
+            agent.SetDestination(patrolPoints[currentWayPoint].position);
+        }
     }
     private void patrol()
     {
@@ -272,7 +274,7 @@ agent.SetDestination(targetLockerPosition);
         }
     }
 
-    public void NotifyPlayerHidInLocker(Vector3 lockerPosition)
+    public void tellPlayerHidInLocker(Vector3 lockerPosition)
     {
         targetLockerPosition = lockerPosition;
         state = m_currentState.playerHideWhileSeen;
@@ -283,29 +285,5 @@ agent.SetDestination(targetLockerPosition);
         isHuntingLocker = false;
         state = m_currentState.patrol;
         GoToNextWaypoint();
-    }
-    private void OnDrawGizmos()
-    {
-        
-        Gizmos.color = Color.yellow;
-        Vector3 forward = transform.forward * viewDistance;
-        Vector3 leftBoundary = Quaternion.Euler(0, -viewAngle / 2f, 0) * forward;
-        Vector3 rightBoundary = Quaternion.Euler(0, viewAngle / 2f, 0) * forward;
-
-        Gizmos.DrawRay(transform.position, leftBoundary);
-        Gizmos.DrawRay(transform.position, rightBoundary);
-
-        // Draw patrol points if available
-        if (patrolPoints != null)
-        {
-            Gizmos.color = Color.green;
-            foreach (var point in patrolPoints)
-            {
-                if (point != null)
-                {
-                    Gizmos.DrawSphere(point.position, 0.2f);
-                }
-            }
-        }
     }
 }

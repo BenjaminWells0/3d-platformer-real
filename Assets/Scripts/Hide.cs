@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Hide : MonoBehaviour
 {
@@ -6,8 +7,8 @@ public class Hide : MonoBehaviour
     [SerializeField] private Transform insideLockerPosition;
     [SerializeField] private Transform outOfLockerPosition;
     [SerializeField] private InsideLocker insideScript;
-    [SerializeField] private float goInRange = 5f;
-    private void OnMouseDown()
+    [SerializeField] private bool canGoInLocker = false;
+    private void Locker()
     {
         if (insideScript == null) return;
 
@@ -17,12 +18,11 @@ public class Hide : MonoBehaviour
             Player localPlayer = GetLocalPlayer();
             if (localPlayer == null) return;
             
-            float distanceToLocker = Vector3.Distance(transform.position, localPlayer.transform.position);
-            if (distanceToLocker > goInRange) return;
+           
 
             if (insideScript.insideLocker == false)
             {
-                Debug.Log($"{localPlayer.name} clicked locker: ");
+                
                 bool wasSeenEntering = localPlayer.WasSeenRecently(0.5f);
 
                 localPlayer.transform.position = insideLockerPosition.position;
@@ -37,7 +37,7 @@ public class Hide : MonoBehaviour
                     EnemyState enemy = FindAnyObjectByType<EnemyState>();
                     if (enemy != null)
                     {
-                        enemy.NotifyPlayerHidInLocker(insideScript.transform.position);
+                        enemy.tellPlayerHidInLocker(insideScript.transform.position);
                     }
                 }
                 else
@@ -50,11 +50,10 @@ public class Hide : MonoBehaviour
         else
         {
             Player localPlayer = GetLocalPlayer();
-            float distanceToLocker = Vector3.Distance(transform.position, localPlayer.transform.position);
-            if (distanceToLocker > goInRange) return;
+            
 
             if (localPlayer != currentPlayerInside) return;
-            Debug.Log($"{currentPlayerInside.name} leaving locker");
+            
             currentPlayerInside.transform.position = outOfLockerPosition.position;
 
             currentPlayerInside.isHidden = false;
@@ -69,8 +68,31 @@ public class Hide : MonoBehaviour
             currentPlayerInside = null;
         }
     }
-    
-            private Player GetLocalPlayer()
+    private void Update()
+    {
+        if(Keyboard.current.bKey.wasPressedThisFrame && canGoInLocker == true)
+        {
+            Locker();
+        }
+        if(Gamepad.current.bButton.wasPressedThisFrame && canGoInLocker == true)
+        {
+            Locker();
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            canGoInLocker = true;
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.CompareTag("Player"))
+        canGoInLocker = false;
+    }
+
+    private Player GetLocalPlayer()
             {
                 Player[] allPlayers = FindObjectsByType<Player>(FindObjectsInactive.Exclude);
                 if (allPlayers.Length == 0) return null;

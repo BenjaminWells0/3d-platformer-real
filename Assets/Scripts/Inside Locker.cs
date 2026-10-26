@@ -14,4 +14,13 @@ public class InsideLocker : MonoBehaviour
             insideLocker = true;
         }
     }
+    private void OnTriggerExit(Collider other)
+    {
+        Player detectedPlayer = other.GetComponentInParent<Player>();
+        if (detectedPlayer != null)
+        {
+            player = detectedPlayer;
+            insideLocker = false;
+        }
+    }
 }
