@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class ActivateDoor : MonoBehaviour
 {
     [SerializeField] private GameObject door;
     [SerializeField] private float amount = 5f;
+    private bool canClickToOpen = false;
 
     private void OnMouseUpAsButton()
     {
@@ -19,7 +21,14 @@ public class ActivateDoor : MonoBehaviour
     {
         if (door == null)
         {
-            return;
+            if(Keyboard.current.bKey.wasPressedThisFrame)
+            {
+                door.transform.Rotate(Vector3.up, amount);
+            }
+            if(Gamepad.current.bButton.wasPressedThisFrame)
+            {
+                door.transform.Rotate(Vector3.up, amount);
+            }
         }
     }
 }
