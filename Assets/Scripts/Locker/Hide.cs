@@ -16,7 +16,7 @@ public class Hide : MonoBehaviour
     {
         if (localPlayer == null) return;
 
-        // IF THEY ARE NOT IN THE LOCKER -> HIDE THEM
+       
         if (!currentPlayerInside.Contains(localPlayer))
         {
             currentPlayerInside.Add(localPlayer);
