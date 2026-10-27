@@ -462,6 +462,10 @@ PrefabInstance:
       propertyPath: isSeen
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6464624493874915812, guid: 7c1015373ce9adf41b5f40dd4870d4ad, type: 3}
+      propertyPath: isGamepadPlayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6752981678215417604, guid: 7c1015373ce9adf41b5f40dd4870d4ad, type: 3}
       propertyPath: crouch
       value: 

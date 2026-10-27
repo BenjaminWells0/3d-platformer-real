@@ -5,6 +5,7 @@ public class Player : MonoBehaviour
     public bool isSeen;
     public bool isHidden;
     public bool isCrouched;
+    public bool isGamepadPlayer;
 
     private float lastSeenTime;
 

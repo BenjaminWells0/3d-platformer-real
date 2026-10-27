@@ -15618,6 +15618,7 @@ MonoBehaviour:
   isSeen: 1
   isHidden: 0
   isCrouched: 0
+  isGamepadPlayer: 0
 --- !u!54 &792801434
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -33711,7 +33712,7 @@ MonoBehaviour:
   player1Prefab: {fileID: 6545311237756115649, guid: 94d833d26b3fbb64b89231125cf415f2, type: 3}
   player2Prefab: {fileID: 6545311237756115649, guid: b2b3cb76a6ceed94c904bdf8d0363ef0, type: 3}
   p1KeyboardScheme: KeyboardLeft
-  gamepadControlSchemeName: Gamepad
+  gamepadControlSchemeName: KeyboardRight
   p2KeyboardFallbackScheme: KeyboardRight
 --- !u!114 &1642584539
 MonoBehaviour:

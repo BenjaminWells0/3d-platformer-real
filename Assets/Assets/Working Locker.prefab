@@ -234,7 +234,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5641091315933899887}
   - component: {fileID: 1025640862457832724}
-  - component: {fileID: 3375442315491659719}
   m_Layer: 0
   m_Name: Inside Locker
   m_TagString: Locker
@@ -287,20 +286,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.7882258, y: 1.7303718, z: 1.1392481}
   m_Center: {x: 0.08042272, y: 0.3651856, z: -0.034603834}
---- !u!114 &3375442315491659719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 778973515669152423}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c6bce75cf30fbf42ae28c9f838384a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InsideLocker
-  player: {fileID: 0}
-  insideLocker: 0
 --- !u!1 &1172259532802941045
 GameObject:
   m_ObjectHideFlags: 0
@@ -1959,7 +1944,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hide
   insideLockerPosition: {fileID: 5641091315933899887}
   outOfLockerPosition: {fileID: 7067751875471776470}
-  insideScript: {fileID: 3375442315491659719}
+  insideScript: {fileID: 0}
   canGoInLocker: 0
 --- !u!65 &5241217890171825513
 BoxCollider:

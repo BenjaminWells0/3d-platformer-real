@@ -17140,7 +17140,7 @@ PrefabInstance:
     - target: {fileID: 6460071951344176834, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
       propertyPath: inside
       value: 
-      objectReference: {fileID: 1319448077}
+      objectReference: {fileID: 0}
     - target: {fileID: 6460071951344176834, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
       propertyPath: player
       value: 
@@ -17175,17 +17175,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4845613957944493930, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
   m_PrefabInstance: {fileID: 1319448075}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1319448077 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3375442315491659719, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
-  m_PrefabInstance: {fileID: 1319448075}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c6bce75cf30fbf42ae28c9f838384a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InsideLocker
 --- !u!4 &1319448078 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7067751875471776470, guid: 2d43e79d94da5834daf0e98d59f2e724, type: 3}
@@ -32563,7 +32552,7 @@ MonoBehaviour:
   player1Prefab: {fileID: 6545311237756115649, guid: 94d833d26b3fbb64b89231125cf415f2, type: 3}
   player2Prefab: {fileID: 6545311237756115649, guid: b2b3cb76a6ceed94c904bdf8d0363ef0, type: 3}
   p1KeyboardScheme: KeyboardLeft
-  gamepadControlSchemeName: Gamepad
+  gamepadControlSchemeName: KeyboardRight
   p2KeyboardFallbackScheme: KeyboardRight
 --- !u!114 &2119717734
 MonoBehaviour:
