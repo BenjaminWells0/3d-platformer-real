@@ -12017,6 +12017,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5035034995001579980, guid: 87295bafbec36074da57147a977a475a, type: 3}
+      propertyPath: Death
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5035034995001579980, guid: 87295bafbec36074da57147a977a475a, type: 3}
+      propertyPath: ObstacleHallWay
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6287815219806496469, guid: 87295bafbec36074da57147a977a475a, type: 3}
       propertyPath: m_ClearFlags
       value: 2
