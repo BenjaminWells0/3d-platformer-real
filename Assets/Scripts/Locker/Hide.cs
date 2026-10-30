@@ -42,7 +42,7 @@ public class Hide : MonoBehaviour
                 localPlayer.isHidden = true;
             }
         }
-        // IF THEY ARE ALREADY IN THIS LOCKER -> LET THEM OUT
+
         else
         {
             currentPlayerInside.Remove(localPlayer);
@@ -63,7 +63,7 @@ public class Hide : MonoBehaviour
 
     private void Update()
     {
-        // KEYBOARD PLAYER DEVICE INPUT (Null-checked first)
+      
         if (Keyboard.current != null && Keyboard.current.bKey.wasPressedThisFrame)
         {
             if (playersAtDoor.Contains(keyboardPlayer) || currentPlayerInside.Contains(keyboardPlayer))
@@ -72,7 +72,7 @@ public class Hide : MonoBehaviour
             }
         }
 
-        // GAMEPAD PLAYER DEVICE INPUT (Null-checked first)
+
         if (Gamepad.current != null && Gamepad.current.bButton.wasPressedThisFrame)
         {
             if (playersAtDoor.Contains(gamepadPlayer) || currentPlayerInside.Contains(gamepadPlayer))
@@ -90,13 +90,13 @@ public class Hide : MonoBehaviour
 
             if (movingPlayer != null)
             {
-                // Track who is physically standing at the interaction door zone
+
                 if (!playersAtDoor.Contains(movingPlayer))
                 {
                     playersAtDoor.Add(movingPlayer);
                 }
 
-                // Automatically link references based on their control configuration type
+
                 if (movingPlayer.isGamepadPlayer)
                 {
                     gamepadPlayer = movingPlayer;
@@ -117,7 +117,7 @@ public class Hide : MonoBehaviour
 
             if (movingPlayer != null)
             {
-                // Remove from zone safely without risking negative integer values
+
                 playersAtDoor.Remove(movingPlayer);
             }
         }
